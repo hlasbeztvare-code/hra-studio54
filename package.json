@@ -1,0 +1,10 @@
+{
+  "name": "hra-studio54",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "build": "node build.mjs",
+    "unpack": "node unpack.mjs"
+  }
+}

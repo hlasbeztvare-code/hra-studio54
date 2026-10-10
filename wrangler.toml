@@ -1,0 +1,15 @@
+name = "studio54-hra"
+main = "worker/index.js"
+compatibility_date = "2026-09-01"
+account_id = "3a147fa6382bb87477201b385bb945ea"
+workers_dev = true
+routes = [{ pattern = "hra.l-code-dynamics.com", custom_domain = true }]
+
+[assets]
+directory = "./deploy"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "studio54-hra-stats"
+database_id = "d8b3409d-4eba-46d6-86f2-0f77da7b7ad9"

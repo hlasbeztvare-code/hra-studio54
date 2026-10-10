@@ -1,0 +1,133 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 540'>
+<defs>
+<linearGradient id='kBg' x1='0' y1='0' x2='0' y2='1'>
+  <stop offset='0' stop-color='#F5D23A'/>
+  <stop offset='.5' stop-color='#E24A5A'/>
+  <stop offset='1' stop-color='#9C27FF'/>
+</linearGradient>
+<radialGradient id='kSun' cx='.3' cy='.25' r='.6'>
+  <stop offset='0' stop-color='#FFE100'/>
+  <stop offset='1' stop-color='#FFE100' stop-opacity='0'/>
+</radialGradient>
+<clipPath id='kFace'><path d='M200,72 C294,72 304,116 304,180 C304,252 286,316 200,322 C114,316 96,252 96,180 C96,116 106,72 200,72 Z'/></clipPath>
+</defs>
+<!-- pozadí komiks -->
+<rect width='400' height='540' fill='#eef3f6'/>
+<rect width='400' height='540' fill='url(#kBg)' opacity='.12'/>
+<circle cx='60' cy='80' r='70' fill='url(#kSun)'/>
+<!-- komiks tečky -->
+<g fill='#121010' opacity='.12'>
+<circle cx='340' cy='60' r='4'/><circle cx='360' cy='90' r='3'/><circle cx='380' cy='140' r='5'/>
+<circle cx='30' cy='220' r='3'/><circle cx='50' cy='260' r='4'/><circle cx='20' cy='320' r='3'/>
+</g>
+<!-- RAINBOW spray za hlavou -->
+<g opacity='.75'>
+<path d='M100,30 Q200,10 300,30 L300,46 Q200,26 100,46 Z' fill='#f94c00'/>
+<path d='M100,46 Q200,26 300,46 L300,58 Q200,38 100,58 Z' fill='#ffe100'/>
+<path d='M100,58 Q200,38 300,58 L300,70 Q200,50 100,70 Z' fill='#19c966'/>
+<path d='M100,70 Q200,50 300,70 L300,82 Q200,62 100,82 Z' fill='#00c7ff'/>
+<path d='M100,82 Q200,62 300,82 L300,94 Q200,74 100,94 Z' fill='#9c27ff'/>
+</g>
+
+<!-- NOHY tenké rovné -->
+<path d='M158,470 L156,538 L182,538 L186,470 Z' fill='#2A3B5C' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<path d='M214,470 L218,538 L244,538 L242,470 Z' fill='#2A3B5C' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- lehké záhyby -->
+<path d='M166,490 L170,530' fill='none' stroke='#1a2740' stroke-width='2' opacity='.6'/>
+<path d='M226,490 L222,530' fill='none' stroke='#1a2740' stroke-width='2' opacity='.6'/>
+<!-- BOTY bílé s černým pruhem (Adidas-style) -->
+<path d='M146,530 L146,538 L194,538 L198,528 L184,520 L158,520 Z' fill='#f6f6f6' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<path d='M202,530 L202,538 L254,538 L250,528 L236,520 L214,520 Z' fill='#f6f6f6' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- bot pruhy -->
+<path d='M162,528 L166,520 M172,530 L176,522 M182,531 L186,523' stroke='#121010' stroke-width='2.5' stroke-linecap='round'/>
+<path d='M218,528 L222,520 M228,530 L232,522 M238,531 L242,523' stroke='#121010' stroke-width='2.5' stroke-linecap='round'/>
+
+<!-- MIKINA (hoodie) tyrkysová -->
+<path d='M110,340 Q90,370 86,420 Q82,470 94,480 L94,448 L108,452 L108,480 L292,480 L292,452 L306,448 L306,480 Q318,470 314,420 Q310,370 290,340 Z' fill='#4CC4C4' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- kapsa kapuce vpředu -->
+<path d='M138,400 Q200,420 262,400 L258,452 Q200,468 142,452 Z' fill='#3DAEAE' stroke='#2b1e18' stroke-width='3'/>
+<path d='M152,418 L152,448 M248,418 L248,448' stroke='#2b1e18' stroke-width='3' stroke-linecap='round'/>
+<!-- KAPUCE za krkem -->
+<path d='M118,336 Q140,296 200,290 Q260,296 282,336 Q278,352 262,350 Q200,346 138,350 Q122,352 118,336 Z' fill='#4CC4C4' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- šňůrky kapuce -->
+<path d='M170,350 L166,398' stroke='#2b1e18' stroke-width='3' stroke-linecap='round'/>
+<path d='M230,350 L234,398' stroke='#2b1e18' stroke-width='3' stroke-linecap='round'/>
+<circle cx='166' cy='400' r='5' fill='#f6f6f6' stroke='#2b1e18' stroke-width='2.5'/>
+<circle cx='234' cy='400' r='5' fill='#f6f6f6' stroke='#2b1e18' stroke-width='2.5'/>
+<!-- MÍROVÝ SYMBOL na hrudi -->
+<circle cx='200' cy='430' r='34' fill='none' stroke='#2b1e18' stroke-width='4.5'/>
+<line x1='200' y1='396' x2='200' y2='464' stroke='#2b1e18' stroke-width='4.5' stroke-linecap='round'/>
+<line x1='200' y1='430' x2='172' y2='454' stroke='#2b1e18' stroke-width='4.5' stroke-linecap='round'/>
+<line x1='200' y1='430' x2='228' y2='454' stroke='#2b1e18' stroke-width='4.5' stroke-linecap='round'/>
+
+<!-- RUKÁVY -->
+<path d='M94,448 Q78,470 86,500 L112,502 Q116,478 114,452 Z' fill='#4CC4C4' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<path d='M306,448 Q322,470 314,500 L288,502 Q284,478 286,452 Z' fill='#4CC4C4' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- RUCE pleťové -->
+<ellipse cx='100' cy='504' rx='15' ry='18' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<ellipse cx='300' cy='504' rx='15' ry='18' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<!-- palec detail -->
+<path d='M110,500 L116,510' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+<path d='M290,500 L284,510' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+
+<!-- KRK -->
+<path d='M174,310 L172,348 Q200,360 228,348 L226,310 Z' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<!-- UŠI pleťové -->
+<ellipse cx='92' cy='200' rx='13' ry='20' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<path d='M90,190 q-5,10 0,20' fill='none' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+<ellipse cx='308' cy='200' rx='13' ry='20' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<path d='M310,190 q5,10 0,20' fill='none' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+
+<!-- OBLIČEJ -->
+<path d='M200,72 C294,72 304,116 304,180 C304,252 286,316 200,322 C114,316 96,252 96,180 C96,116 106,72 200,72 Z' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<g clip-path='url(#kFace)'>
+  <!-- lesk kůže -->
+  <path d='M240,60 C280,160 265,240 220,320 L372,320 L372,60 Z' fill='#E0AE88' opacity='.4'/>
+  <!-- jemné tváře -->
+  <ellipse cx='128' cy='244' rx='22' ry='11' fill='#F08A7A' opacity='.4'/>
+  <ellipse cx='272' cy='244' rx='22' ry='11' fill='#F08A7A' opacity='.4'/>
+</g>
+
+<!-- VLASY SILVER UNISEX - jízek nahoru -->
+<path d='M100,120 C116,70 162,54 200,54 C238,54 284,70 300,120 C286,108 266,98 244,98 C230,98 220,102 210,108 C204,112 196,112 190,108 C180,102 170,98 156,98 C134,98 114,108 100,120 Z' fill='#C8C8CE' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- výběžky nahoru (jízek) -->
+<path d='M140,98 L144,70 M158,96 L162,66 M178,94 L180,62 M200,94 L200,60 M222,94 L220,62 M242,96 L240,66 M262,100 L256,74' stroke='#8c8c92' stroke-width='3.5' stroke-linecap='round'/>
+<!-- lesk vlasů -->
+<ellipse cx='180' cy='86' rx='28' ry='7' fill='#fff' opacity='.5' transform='rotate(-10 180 86)'/>
+<!-- culík/ocásek vzadu volitelný unisex -->
+<path d='M284,112 Q310,130 302,170 Q294,160 290,140 Z' fill='#C8C8CE' stroke='#2b1e18' stroke-width='3.5' stroke-linejoin='round'/>
+
+<!-- OBOČÍ - velké oblouky komiks -->
+<path d='M118,168 Q148,154 180,170' fill='none' stroke='#2b1e18' stroke-width='7' stroke-linecap='round'/>
+<path d='M220,170 Q252,154 282,168' fill='none' stroke='#2b1e18' stroke-width='7' stroke-linecap='round'/>
+
+<!-- OČI karikaturní (jedno šilhavé) -->
+<ellipse cx='148' cy='200' rx='22' ry='15' fill='#fff' stroke='#2b1e18' stroke-width='3.5'/>
+<ellipse cx='252' cy='200' rx='22' ry='15' fill='#fff' stroke='#2b1e18' stroke-width='3.5'/>
+<!-- panenky -->
+<circle cx='146' cy='200' r='9' fill='#2b1e18'/>
+<circle cx='256' cy='204' r='9' fill='#2b1e18'/>
+<!-- odlesk v očích -->
+<circle cx='142' cy='196' r='3' fill='#fff'/>
+<circle cx='260' cy='200' r='3' fill='#fff'/>
+<!-- Jedno víčko (lehce zavřené) jako prostřední postava na obrázku -->
+<path d='M226,192 Q252,188 278,192' fill='none' stroke='#2b1e18' stroke-width='3' stroke-linecap='round' opacity='.5'/>
+
+<!-- NOS malý komiks -->
+<path d='M194,214 Q188,240 192,262 Q198,268 208,262 Q212,240 206,214' fill='none' stroke='#2b1e18' stroke-width='3' stroke-linecap='round'/>
+<ellipse cx='200' cy='266' rx='8' ry='3' fill='#E0AE88' opacity='.5'/>
+
+<!-- ÚSTA - měkký úsměv -->
+<path d='M164,290 Q200,310 236,290' fill='none' stroke='#2b1e18' stroke-width='4.5' stroke-linecap='round'/>
+<path d='M172,294 Q200,308 228,294 L228,296 Q200,310 172,296 Z' fill='#9c3a3a' stroke='#2b1e18' stroke-width='2'/>
+
+<!-- piercing v uchu -->
+<circle cx='96' cy='216' r='3' fill='#E2B04E' stroke='#2b1e18' stroke-width='1.5'/>
+<circle cx='304' cy='216' r='3' fill='#E2B04E' stroke='#2b1e18' stroke-width='1.5'/>
+
+<!-- komiks bublinka POV! -->
+<g transform='translate(300,180) rotate(10)'>
+<path d='M-30,-20 Q-10,-28 10,-24 L24,-14 L14,-10 L18,8 Q-6,10 -28,0 Z' fill='#FFE100' stroke='#2b1e18' stroke-width='3'/>
+<text x='-6' y='-2' text-anchor='middle' font-family='Impact,Arial Black,Arial' font-weight='900' font-size='13' fill='#2b1e18'>POV!</text>
+</g>
+</svg>

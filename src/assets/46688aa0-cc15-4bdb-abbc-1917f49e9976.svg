@@ -1,0 +1,90 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 460'>
+<rect width='400' height='460' fill='#eef3f6'/>
+<circle cx='70' cy='60' r='60' fill='#fff' opacity='.13'/>
+<circle cx='340' cy='120' r='34' fill='#fff' opacity='.1'/>
+<defs>
+<clipPath id='htm'><path d='M200,70 C298,70 304,110 304,174 C304,240 288,312 200,318 C112,312 96,240 96,174 C96,110 102,70 200,70 Z'/></clipPath>
+<linearGradient id='teeBg' x1='0' y1='0' x2='1' y2='1'>
+  <stop offset='0' stop-color='#f0f0f0'/>
+  <stop offset='1' stop-color='#d8d8d8'/>
+</linearGradient>
+<radialGradient id='smileFace' cx='.5' cy='.5' r='.5'>
+  <stop offset='0' stop-color='#f6d05a'/>
+  <stop offset='.55' stop-color='#f08a3a'/>
+  <stop offset='1' stop-color='#e24a5a'/>
+</radialGradient>
+</defs>
+<!-- TRIKO polití neon -->
+<path d='M30,460 C30,392 100,352 200,348 C300,352 370,392 370,460 Z' fill='url(#teeBg)' stroke='#2b1e18' stroke-width='4'/>
+<!-- výstřih tričko -->
+<path d='M164,352 Q200,374 236,352 Q200,384 164,352 Z' fill='#d0d0d0' stroke='#2b1e18' stroke-width='3'/>
+<!-- Neon spatters na trico -->
+<circle cx='70' cy='400' r='4' fill='#ff2d9c'/>
+<circle cx='90' cy='425' r='3' fill='#ffe100'/>
+<circle cx='115' cy='408' r='5' fill='#00c7ff'/>
+<circle cx='320' cy='405' r='4' fill='#f94c00'/>
+<circle cx='340' cy='428' r='3' fill='#9c27ff'/>
+<circle cx='290' cy='410' r='2.5' fill='#19ff6a'/>
+<circle cx='65' cy='435' r='2' fill='#ff6b00'/>
+<circle cx='345' cy='398' r='2' fill='#ff2d9c'/>
+<path d='M78,418 Q82,425 87,420' stroke='#9c27ff' stroke-width='2' fill='none'/>
+<path d='M302,420 Q307,428 312,422' stroke='#19ff6a' stroke-width='2' fill='none'/>
+<path d='M58,428 Q66,435 72,430' stroke='#ffe100' stroke-width='2' fill='none'/>
+<path d='M328,440 Q336,446 342,442' stroke='#00c7ff' stroke-width='2' fill='none'/>
+<!-- PASHA logo kruh -->
+<circle cx='200' cy='410' r='34' fill='url(#smileFace)' stroke='#111' stroke-width='3.5'/>
+<!-- X oko -->
+<path d='M184,400 L194,410 M184,410 L194,400' stroke='#111' stroke-width='3.5' stroke-linecap='round'/>
+<!-- vlnité oko -->
+<path d='M204,398 Q209,406 214,398 Q219,406 224,398' stroke='#111' stroke-width='3.5' fill='none' stroke-linecap='round'/>
+<!-- vyplazenej jazyk -->
+<path d='M194,422 Q200,432 212,428 Q218,422 210,418 Q200,418 194,422 Z' fill='#9c27ff' stroke='#111' stroke-width='2'/>
+<text x='200' y='452' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' letter-spacing='3' fill='#111'>OWNER</text>
+<!-- krk -->
+<path d='M172,282 L170,360 Q200,378 230,360 L228,282 Z' fill='#E0AE88' stroke='#2b1e18' stroke-width='4'/>
+<!-- uši -->
+<ellipse cx='88' cy='196' rx='15' ry='22' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<path d='M86,186 q-7,10 0,20' fill='none' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+<ellipse cx='312' cy='196' rx='15' ry='22' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<path d='M314,186 q7,10 0,20' fill='none' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+<!-- obličej -->
+<path d='M200,70 C298,70 304,110 304,174 C304,240 288,312 200,318 C112,312 96,240 96,174 C96,110 102,70 200,70 Z' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<g clip-path='url(#htm)'>
+  <!-- lesk kůže -->
+  <path d='M250,50 C290,150 275,250 220,330 L372,330 L372,50 Z' fill='#E0AE88' opacity='.5'/>
+  <!-- lehké růžové tváře -->
+  <ellipse cx='128' cy='238' rx='22' ry='12' fill='#f08a7a' opacity='.35'/>
+  <ellipse cx='272' cy='238' rx='22' ry='12' fill='#f08a7a' opacity='.35'/>
+</g>
+<!-- krátké zrzavé vlasy (jízek nahoru, strana vlevo) -->
+<path d='M106,118 C128,66 170,54 200,54 C230,54 270,66 294,118 C280,106 258,96 232,96 C216,96 206,100 200,106 C194,100 184,96 170,96 C146,96 125,106 106,118 Z' fill='#C85A2A' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- strniste vlasů do strany -->
+<path d='M138,96 L142,66 M156,94 L160,62 M174,92 L176,58 M194,94 L196,58 M214,94 L212,58 M234,96 L232,62 M254,98 L250,66 M274,102 L268,72' stroke='#8c3a16' stroke-width='3' stroke-linecap='round'/>
+<!-- vlasový lesk -->
+<ellipse cx='180' cy='88' rx='28' ry='8' fill='#fff' opacity='.4' transform='rotate(-14 180 88)'/>
+<!-- obočí - světlejší -->
+<path d='M118,170 Q148,160 180,170' fill='none' stroke='#8c3a16' stroke-width='5.5' stroke-linecap='round'/>
+<path d='M220,170 Q252,160 282,170' fill='none' stroke='#8c3a16' stroke-width='5.5' stroke-linecap='round'/>
+<!-- modré veselé oči -->
+<ellipse cx='148' cy='194' rx='18' ry='12' fill='#fff' stroke='#2b1e18' stroke-width='3'/>
+<ellipse cx='252' cy='194' rx='18' ry='12' fill='#fff' stroke='#2b1e18' stroke-width='3'/>
+<circle cx='150' cy='196' r='8' fill='#2a7fb8'/>
+<circle cx='254' cy='196' r='8' fill='#2a7fb8'/>
+<circle cx='152' cy='194' r='3.5' fill='#111'/>
+<circle cx='256' cy='194' r='3.5' fill='#111'/>
+<circle cx='154' cy='190' r='2' fill='#fff'/>
+<circle cx='258' cy='190' r='2' fill='#fff'/>
+<!-- nos -->
+<path d='M200,208 C196,240 192,254 198,264' fill='none' stroke='#2b1e18' stroke-width='3.5' stroke-linecap='round'/>
+<ellipse cx='200' cy='270' rx='8' ry='4' fill='#E0AE88' opacity='.45'/>
+<!-- široký úsměv Tommy's grin -->
+<path d='M152,286 Q200,322 248,286' fill='none' stroke='#2b1e18' stroke-width='5' stroke-linecap='round'/>
+<path d='M160,290 Q200,316 240,290 L240,292 Q200,318 160,292 Z' fill='#fff' stroke='#2b1e18' stroke-width='2'/>
+<line x1='176' y1='292' x2='176' y2='306' stroke='#2b1e18' stroke-width='1.2'/>
+<line x1='190' y1='294' x2='190' y2='310' stroke='#2b1e18' stroke-width='1.2'/>
+<line x1='210' y1='294' x2='210' y2='310' stroke='#2b1e18' stroke-width='1.2'/>
+<line x1='224' y1='292' x2='224' y2='306' stroke='#2b1e18' stroke-width='1.2'/>
+<!-- vrásky úsměvu -->
+<path d='M138,254 Q146,266 158,270' fill='none' stroke='#2b1e18' stroke-width='2' stroke-linecap='round' opacity='.4'/>
+<path d='M262,254 Q254,266 242,270' fill='none' stroke='#2b1e18' stroke-width='2' stroke-linecap='round' opacity='.4'/>
+</svg>

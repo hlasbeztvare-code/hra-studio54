@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio 54 - Legendary Prague Afterclub</title>
+    <meta name="keywords" content="afterclub, artery, after party, afterparty, Studio 54, dance club, after klub, afterklub, studio">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="/js/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-3823600-13', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="/css/jquery.simpleselect.css" type="text/css">
+<link rel="stylesheet" href="/css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" href="/css/lightbox.css" type="text/css" media="all">
+<link rel="stylesheet" href="/css/carousel.css" type="text/css" />
+<link rel="stylesheet" href="/css/prettyPhoto.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="/dist/skin/blue.monday/css/jplayer.blue.monday.css" type="text/css"/>
+
+
+
+<script type="text/javascript" src="/js/floatingMenu.min.js"></script>
+<script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="/js/jquery.carousel-1.1.min.js"></script>
+<script src="/js/scroll.min.js"></script>
+<script type="text/javascript" src="/js/lineUp.min.js"></script>
+<script type="text/javascript" src="/js/showNews.min.js"></script>
+<script type="text/javascript" src="/js/switchData.min.js"></script>
+<script type="text/javascript" src="/js/jquery.simpleselect.min.js"></script>
+<script type="text/javascript" src="/js/simpleSelect.min.js"></script>
+<script type="text/javascript" src="/js/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="/js/showGalleries.min.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.min.js"></script>
+<script type="text/javascript" src="/js/parallax.min.js"></script>
+<script type="text/javascript" src="/js/showDjs.min.js"></script>
+<script type="text/javascript" src="/js/showVideos.min.js"></script>
+<script type="text/javascript" src="/js/showRecords.min.js"></script>
+<script src="/js/jplayer-scroll.js"></script>
+<script type="text/javascript" src="/dist/jplayer/jquery.jplayer.min.js"></script>
+<!--    <script type="text/javascript" src="dist/add-on/jplayer.playlist.js"></script>-->
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var screenWidth = $(window).width();
+        if (screenWidth >= 1501)
+            $('.carousel').carousel({
+                hAlign: 'center',
+                vAlign: 'center',
+                hMargin: 1.2,
+                carouselWidth: 1400,
+                frontHeight: 400,
+                frontWidth: 287,
+                carouselHeight: 400
+            });
+        if (screenWidth >= 1151 && screenWidth <= 1500)
+            $('.carousel').carousel({
+                hAlign: 'center',
+                vAlign: 'center',
+                hMargin: 1.2,
+                carouselWidth: 1000,
+                frontHeight: 300,
+                frontWidth: 216,
+                carouselHeight: 300
+            });
+        if (screenWidth >= 851 && screenWidth <= 1150)
+            $('.carousel').carousel({
+                hAlign: 'center',
+                vAlign: 'center',
+                hMargin: 1.2,
+                carouselWidth: 700,
+                frontHeight: 200,
+                frontWidth: 144,
+                carouselHeight: 200
+            });
+        if (screenWidth >= 551 && screenWidth <= 850)
+            $('.carousel').carousel({
+                hAlign: 'center',
+                vAlign: 'center',
+                hMargin: 0.8,
+                carouselWidth: 500,
+                frontHeight: 200,
+                frontWidth: 144,
+                carouselHeight: 200
+            });
+        if (screenWidth >= 0 && screenWidth <= 550)
+            $('.carousel').carousel({
+                hAlign: 'center',
+                vAlign: 'center',
+                hMargin: 0.5,
+                carouselWidth: 280,
+                frontHeight: 200,
+                frontWidth: 144,
+                carouselHeight: 200
+            });
+
+        $("#jquery_jplayer_1").jPlayer({
+            ready: function (event) {
+                $(this).jPlayer("setMedia", {
+                    title: "",
+                    mp3: "",
+                });
+            },
+            swfPath: "./dist/jplayer",
+            supplied: "mp3, oga",
+            wmode: "window",
+            useStateClassSkin: true,
+            autoBlur: true,
+            smoothPlayBar: false,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true
+        });
+        $('#page3').parallax({imageSrc: 'images/page3_bg.jpg'});
+        $('#page5').parallax({imageSrc: 'images/page5_bg.jpg'});
+        $('#page7').parallax({imageSrc: 'images/page7_bg.jpg'});
+    });
+    //]]>
+</script>
+
+</head>
+    <body>
+        <div id="floatMenuIcon" class="floatIcon">menu</div>
+<div id="floatMusicIcon" name="http://music.studio54.cz:8000/128" class="musicLink floatIcon scroll"><span>music</span>54
+    <div class="archivName" style="display:none">MUSIC54</div>
+</div>
+<div id="floatLoginIcon" class="floatIcon" onclick="javascript:location.href='https://members.studio54.cz/cs'" >login</div>
+<div id="floatUpIcon">nahoru</div>
+
+
+<div id="floatMenu">
+	<div id="closeFloatMenu">zavřít menu</div>
+    <ul>
+        <li><a href="#Program" class="scroll">program</a></li>
+        <li><a href="#Hudba" class="scroll">hudba</a></li>
+        <li><a href="#Foto" class="scroll">foto</a></li>
+        <li><a href="#Video" class="scroll">video</a></li>
+        <li><a href="#Djs" class="scroll">djs</a></li>
+       
+        <li><a href="#Klub" class="scroll">vip</a></li>
+        <li><a href="#Kontakt" class="scroll">kontakt</a></li>
+    </ul>
+	<div id="langSelect">
+		<a href="/cs" class="langItem current"><img src="/images/csFlag.jpg"></a>
+		<a href="/en" class="langItem"><img src="/images/enFlag.jpg"></a>
+	</div>
+</div>
+
+
+<div id="floatMenuWrapper">
+    <div id="topBar">
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+            <div class="jp-type-single">
+                <div class="jp-gui jp-interface">
+                    <div class="jp-controls">
+                        <button class="jp-play" role="button" tabindex="0">play</button>
+                        <button class="jp-stop" role="button" tabindex="0">stop</button>
+                    </div>
+                    <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                        </div>
+                    </div>
+                    <div class="jp-volume-controls">
+                        <button class="jp-mute" role="button" tabindex="0">mute</button>
+                        <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                        <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                        </div>
+                    </div>
+                    <div class="jp-time-holder">
+                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="jp-details">
+                    <div class="jp-title" aria-label="title">&nbsp;</div>
+                </div>
+                <div class="stopLink">x</div>
+
+                <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    Pro přehrání hudby musíte upgradovat Váš prohlížeč, nebo stáhnout nejnovější verzi <a
+                        href="http://get.adobe.com/flashplayer/" target="_blank">Flash pluginu</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="wrap">
+            <ul id="menu">
+                <li><a href="#Program" class="scroll" title="zjisti, kdy hraje tvůj oblíbený DJ...">program</a></li>
+                <li><a href="#Hudba" class="scroll" title="dj sety, záznamy párties a non stop Music 54...">hudba</a></li>
+                <li><a href="#Foto" class="scroll" title="fotogalerie z akcí nejen ve Studiu 54...">foto</a></li>
+                <li><a href="#Video" class="scroll" title="videoreporty z akcí nejen ve Studiu 54...">video</a></li>
+                <li><a href="#Djs" class="scroll" title="najdi svého oblíbeného DJ...">djs</a></li>
+                <li><a href="#Bar" class="scroll" title="u nás žízní neumřeš...">bar</a></li>
+                <li><a href="#Klub" class="scroll" title="staň se členem našeho VIP klubu...">vip</a></li>
+                <li><a href="#Kontakt" class="scroll" title="kontaktuj nás...">kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section id="page1">
+        <div id="newsBg">
+            <div id="newsWrapper">
+                <div class="wrap">
+
+                    <div id="logo">
+                        <img src="/images/logo.png">
+                    </div>
+                    <div id="flyerSlider">
+                        <div class="carousel">
+                            <div class="slides">
+                                                                <div>
+                                    <a href="/images/posters/20261002.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261002.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261003.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261003.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261004.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261004.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261010.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261010.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261011.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261011.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261213.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261213.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261018.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261018.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261024.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261024.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261025.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261025.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261031_2.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261031_2.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261121.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261121.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261225.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261225.jpg"/></a>
+                                </div>
+                                                                <div>
+                                    <a href="/images/posters/20261027.jpg" data-lightbox="posters"><img src="thumbnail.php?settings=r_height&location=images/posters/20261027.jpg"/></a>
+                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lessNewsBg">
+                    <div class="wrap">
+                        <div id="news">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div id="newsOutput">
+                    <a href="#" id="newsButtonLeft"></a>
+                    <a href="#" id="newsButtonRight"></a>
+
+                    <div id="newsBlock"></div>
+                </div>
+
+                <div class="newsArticle">
+                    <div class="articleHeader">
+                        <img src="">
+
+                        <h2></h2>
+                        <a href="#" class="closeArticle"><span class="closeArticleIcon"></span>zavři novinku</a>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="articleText">
+                        <p></p>
+                    </div>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//studio54.cz" target="_blank"
+                       class="fbShare">sdílej na facebooku</a>
+                </div>
+
+
+                <div class="moreButton" id="newsButton">klikni pro více novinek</div>
+                <div class="lessButton" id="lessNewsButton">skrýt novinky</div>
+            </div>
+        </div>
+		<video autoplay loop poster="images/page1_bg.jpg" id="bgvid">
+			<source src="video/studio54_intro.webm" type="video/webm">
+			<source src="video/studio54_intro.mp4" type="video/mp4">
+		</video>
+    </section>
+	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+	<div class="elfsight-app-b8bfa8da-41b1-4b7d-a794-b364169c4900"></div>
+    <section id="page2">
+        <div class="wrap">
+			<div id="afterclubLess">
+				<div class="afterclubColLeft">
+					<h2>nejlepší pražský afterclub</h2>
+
+					<p>objevte legendu pražských afterparties! studio 54 je za více než 22 let historie pevně spajto s
+                    českou
+                    klubovou scénou a málokde budete hledat takovou osobitou atmosféru jako právě zde každé</p>
+
+					<div id="afterclubDays">
+
+						<div class="afterclubDay">
+							sobota
+						</div>
+						<div class="afterclubDay">
+							neděle
+						</div>
+					</div>
+					<p>s nejlepšími djs od <span>02:54 hodin</span></p>
+				</div>
+				<div class="afterclubColRight">
+					<div  id="afterclubMoreButton">o klubu</div>
+				</div>
+			</div>
+			<div id="afterclubMore">
+				<h2>nejlepší pražský afterclub</h2>
+				<p>Když ke slovu párty předpojíte slovo after, většině se vybaví pražský afterklub <span>Studio 54</span>, který se za svou více než čtrnáctiletou historii stal pro mnoho generací českých klubberů místem, kde zakončili nejeden party víkend. <span>Studio 54</span> je klubem, který je nejen v ČR proslaven strhující atmosférou, kterou umí vytvořit jen pečlivě vybíraní a samozřejmě ti nelepší DJs. <span>Studio 54</span> také bylo oficiálním partnerem a afterklubem těch nejvýznamnějších českých eventů jako: <span>mácháč open air beach, transmission, festival svojšice, pleasure island, summer festival, creamfields, sensation white, cosmic trip, orion hall</span>.</p>
+				<p><span>Třikrát týdně<span> otevíráme již ve <span>4 hodiny ráno</span> dvě patra zábavy, ve kterých naleznete <span>2 bary, VIP sekci, zábavné hry a videohry, lounge a šatnu</span>. <span>Studio 54</span> se těší <span>velké základně pravidelných návštěvníků</span>, kteří mohou využívat také unikátní VIP Klub, díky kterému mohou vstupit do světa VIP zábavy.</p>
+				<p>Několikrát ročně se konají <span>prémiové akce</span> se zahraničními DJs. Za dobu existence si zde zahráli například <span>Arno cost, hoxton whores, les schmitz, lee dagger, alan x</span>, a další . Svou pravidelnou residenturu zde má ale také řada známých českých DJs: <span>Enrico, Tommy Rogers, Subgate, Faith, Pietros, Richie</span> a mnoho dalších a nepravidelně i dálší jako <span>Chris Sadler, Michael C, Bon Finix</span> a další.</p>
+				<p>S heslem Kdy ostatní končí, my začínáme můžete ve <span>Studiu 54</span> pokračovat až do pozdních odpoledních hodin.  Přesvědčte se na vlastní oči a uši, že <span>Studio 54</span> je bez nadsázky <span>magickým místem</span>.</p>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1scs!2scz!4v1465821282990!6m8!1m7!1szdIRtmpNe1wAAAQvO0GHQg!2m2!1d50.08678495226658!2d14.43616140894608!3f308!4f0!5f0.7820865974627469" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="aboutClubPhotos">
+					<a href="/images/image1.jpg" class="aboutClubPhoto" data-lightbox="aboutClub"><img src="/images/image1_thumb.jpg"></a>
+					<a href="/images/image2.jpg" class="aboutClubPhoto" data-lightbox="aboutClub"><img src="/images/image2_thumb.jpg"></a>
+					<a href="/images/image3.jpg" class="aboutClubPhoto" data-lightbox="aboutClub"><img src="/images/image3_thumb.jpg"></a>
+					<a href="/images/image4.jpg" class="aboutClubPhoto" data-lightbox="aboutClub"><img src="/images/image4_thumb.jpg"></a>
+				</div>
+				
+				<div class="lessButton" id="afterclubLessButton">skrýt info</div>
+			</div>
+        </div>
+    </section>
+    <div id="Program"></div>
+    <section id="page3">
+        <div class="wrap">
+            <div id="backwardInTime">zpět<br/>v čase</div>
+            <h2>after parties djs line up</h2>
+
+            <div id="forwardInTime">dopředu<br/>v čase</div>
+            <div id="lineUp">
+
+
+                <div id="lineUpSlider">
+                    <div id="lineUpContainer">
+
+                    </div>
+                </div>
+
+            </div>
+            <p>změna programu vyhrazena. vstup do klubu od 18 let. zvukový záznam je k dispozici vždy cca 60 minut po
+                ukončení akce.<br/>získejte výhodnější vstup s naší max54 kartou.
+            </p>
+
+            <p id="nameDay">dnes je sobota 03.10.2026, má svátek <span>Bohumil</span> <small>a zítra <span>František</span></small></p>
+        </div>
+    </section>
+   
+
+
+
+
+   
+
+    <!--fotogalerie-->
+    <div id="Foto"></div>
+    <section id="page5">
+        <div id="photoGallery">
+            <h2>foto</h2>
+
+            <!-- seznam alb -->
+            <div id="albums">
+
+                <div class="galleryNavButtons">
+                    <div id="albumLeft" class="galleryLeft">předchozí alba</div>
+                    <div id="albumRight" class="galleryRight">následující alba</div>
+                </div>
+
+                <div id="albumItems"></div>
+
+            </div>
+            <!-- konec seznamu alb -->
+
+
+            <!--seznam fotek-->
+            <div id="photos">
+                <div class="galleryNavButtons">
+                    <div id="photoLeft" class="galleryLeft">předchozí fotky</div>
+                    <div id="photoRight" class="galleryRight">následující fotky</div>
+                </div>
+                <div id="photoItems"></div>
+				<div class="galleryNav">
+					<h3><span class="galleryDate"></span><span></span>
+                        <div class="galleryBack">zpět na seznam alb</div>
+                    </h3>
+				</div>
+            </div>
+            <!--konec seznamu fotek-->
+        </div>
+    </section>
+    <!--konec fotogalerie-->
+
+    <!--hudba-->
+    <div id="Hudba"></div>
+    <section id="page6">
+        <div id="musicBg">
+            <div class="wrap">
+
+
+                <!--hudba skrytá-->
+                <div id="music">
+                    <h2>hudba</h2>
+
+                    <div id="musicIcons">
+                        <div class="musicIcon" name="djSets">
+                            <h3>dj sety</h3>
+
+                            <p>poslechni si sety našich residentních djs</p>
+                            <img src="images/djSetsIcon.png">
+                        </div>
+                        <div class="musicIcon" name="archiv">
+                            <h3>záznamy</h3>
+
+                            <p>vrať se v čase a poslechni si záznamy akcí studia 54</p>
+                            <img src="images/recordsIcon.png">
+                        </div>
+                        <div class="musicIcon" name="music54">
+                            <h3>music54 live</h3>
+
+                            <p>studio 54 je nyní v éteru! 24 hodin non-stop hudby</p>
+                            <img src="images/transmitterIcon.png">
+                        </div>
+                    </div>
+                </div>
+                <!--konec skrytá hudba-->
+
+                <!--hudba rozbalena-->
+                <div id="musicFull">
+                    <div id="musicFullContainer">
+                        <a href="#" id="musicButtonLeft"></a>
+                        <a href="#" id="musicButtonRight"></a>
+
+                        <h2>hudba</h2>
+
+                        <p>žiješ hudbou stejně jako my? připomeň si atmosféru našich párty ze záznamu, poslechni
+                            promotion sety
+                            našich residentních djs nebo zkus naši prémiovou stanici music54!</p>
+
+                        <div id="musicMenu">
+                            <div class="musicMenuItem djSetsColor" name="djSets">
+                                <h3>dj sety</h3>
+
+                                <p>poslouchej a stahuj zdarma</p>
+                            </div>
+                            <div class="musicMenuItem archivColor" name="archiv">
+                                <h3>archív</h3>
+
+                                <p>poslouchej záznamy parties zdarma</p>
+                            </div>
+                            <div class="musicMenuItem music54Color" name="music54">
+                                <h3><span>music</span>54</h3>
+
+                                <p>prémiový hudební obsah a pořady</p>
+                            </div>
+                        </div>
+
+                        <div id="djSetsBlock">
+
+                            <!-- List of sets -->
+                            <div id="musicSets">
+                                <div id="musicSetsContainer"></div>
+                            </div>
+                            <!-- End of set list-->
+
+
+                            <div id="musicSearch">
+                                <p>vyhledej podle jména</p>
+
+                                <div id="musicSelect">
+                                    <select name="selectDj">
+<option value="0" selected="selected">vše</option>
+<option value="1">Miquel</option>
+<option value="2">Tibiza</option>
+<option value="3">Smoke</option>
+<option value="4">Sylon</option>
+<option value="5">Billy Bright</option>
+<option value="6">Sweder</option>
+<option value="7">Skipper</option>
+<option value="8">P-Jay</option>
+<option value="9">Lucass Mayer</option>
+<option value="10">Enrico</option>
+<option value="11">Tommy Rogers</option>
+<option value="12">Faith</option>
+<option value="13">P@co</option>
+<option value="14">Pietros</option>
+<option value="15">Richie</option>
+<option value="16">Ronny</option>
+<option value="17">Subgate</option>
+<option value="18">Marty Fish</option>
+<option value="19">Kifli</option>
+<option value="21">Michael J</option>
+<option value="22">Jumbo</option>
+<option value="23">Mark Evil</option>
+<option value="24">Phil Crow</option>
+<option value="25">LanDchi</option>
+<option value="26">Beda</option>
+<option value="27">Wulky</option>
+<option value="28">Nicolas V</option>
+<option value="29">Zendi</option>
+<option value="30">Pierre Marco</option>
+<option value="31">Rio</option>
+<option value="33">Jumper</option>
+<option value="35">James Lurk</option>
+<option value="36">Djane Cobra</option>
+<option value="37">Dominik Van</option>
+<option value="38">Mazer</option>
+<option value="39">Jose Madeira</option>
+<option value="40">Marcus Burian</option>
+<option value="41">Philbill Brothers</option>
+</select>
+
+                                </div>
+
+                            </div>
+                            <p>promo sety jsou určeny pouze pro osobní poslech. veřejná produkce, kopírování a další
+                                publikování
+                                bez svolení majitelů autorských práv k dílu je zakázáno.</p>
+
+                        </div>
+
+
+                        <div id="archivBlock">
+                            <div id="archivContainer">
+                                <div class="archiv-playlist"></div>
+                                <div id="archivBottomNavigation">
+                                    <div id="archivSearchName"><input id="searchByName"
+                                                                      placeholder="Vyhledej podle jména" type="text">
+                                    </div>
+                                    <div id="archivItemsNavigation">
+                                        <div id="archivNavDown"></div>
+                                        <p>listovat záznamy</p>
+
+                                        <div id="archivNavUp"></div>
+                                    </div>
+                                    <div id="archivSearchDate"><input id="searchByDate"
+                                                                      placeholder="Vyhledej podle data" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>záznamy jsou určeny pouze pro osobní poslech. veřejná produkce, kopírování a další
+                                publikování
+                                bez svolení majitelů autorských práv k dílu je zakázáno</p>
+                        </div>
+
+
+                        <div id="music54Block">
+                            <div id="music54Container">
+
+
+                                <p><strong>MUSIC54</strong> je non-stop proud těch nejlepších <strong>setů, podcastů, remixů a originálních tracků</strong> exklusivně od residentních DJ's Studia 54.</p>
+
+								<p><strong>MUSIC54</strong> je dostupný <strong>zdarma 24 hodin denně</strong> a to jak z počítače, mobilu nebo tabletu.</p>
+
+                                <div class="stream">
+                                    <img name="http://music.studio54.cz:8000/128" class="musicLink" src="/images/mp3stream_128.png">
+                                    <img name="http://music.studio54.cz:8000/64" class="musicLink" src="/images/mp3stream_64.png">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a href="#" id="hideMusic">skrýt hudbu</a>
+                    </div>
+                </div>
+                <!--konec hudba rozbalena-->
+
+            </div>
+        </div>
+    </section>
+    <!--konec hudby-->
+
+    <div id="Video"></div>
+    <section id="page7">
+        <h2>video</h2>
+
+        <div id="videoWrapper">
+            <div class="galleryNavButtons">
+                <div id="videoLeft" class="galleryLeft">předchozí videa</div>
+                <div id="videoRight" class="galleryRight">následující videa</div>
+            </div>
+
+            <div id="videos"></div>
+        </div>
+    </section>
+    
+   
+    <div id="Djs"></div>
+    <section id="page9">
+        <h2>djs crew</h2>
+
+        <p>zjisti více informací o našich skvělých residentních djs</p>
+
+        <div id="djsSlider">
+            <div class="djsLeft"></div>
+            <div class="djsRight"></div>
+            <div id="djsItems"></div>
+        </div>
+        <div class="wrap">
+            <div id="bookingDjs">
+                <h3>booking dj<span>s</span></h3>
+
+                <p>máte zájem o vystoupení některého z našich residentních djs studia 54? kontaktujte nás pro více
+                    informací na emailové adrese <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9aba6a6a2a0a7ae89babdbcada0a6fcfde7aab3">[email&#160;protected]</a>. uveďte termín, název klubu, místo a dj, o kterého
+                    máte zájem.</p>
+            </div>
+        </div>
+    </section>
+<!--
+
+    <div id="Klub"></div>
+    <section id="page10">
+        <div class="wrap">
+            <span id="membership">
+
+             <span id="membershipLess">
+            	<div id="membershipLeftColumn">
+                    <h2>VIP klub</h2>
+
+                    <p>zaregistruj se a užij si výhod vip členství legendárního pražského afterclubu. vyber si jednu ze
+                        tří úrovní a klikni!</p>
+                </div>
+				<div id="membershipItems">
+                    <div class="membershipItem membershipItemSilver">
+                        <h3>silver</h3>
+
+                        <p>
+                            vstup zdarma<br/>
+                            pro <span>1 osobu</span><br/>
+                            sleva na baru <span>10%</span><br/>
+                            přednostní vstup<br/>
+                            běžná <span>šatna zdarma</span><br/>
+                            kredit <span>500,-</span> czk
+                        </p>
+
+                        <div class="price">2.990 czk/<span>rok</span></div>
+                    </div>
+                    <div class="membershipItem membershipItemGold">
+                        <h3>gold</h3>
+
+                        <p>
+                            vstup zdarma + do VIP<br/>
+                            pro <span>2 osoby</span><br/>
+                            sleva na baru <span>15%</span><br/>
+                            přednostní vstup<br/>
+                            prioritní <span>šatna zdarma</span><br/>
+                            kredit <span>2.000,-</span> czk
+                        </p>
+
+                        <div class="price">5.990 czk/<span>rok</span></div>
+                    </div>
+                    <div class="membershipItem membershipItemPlatinum">
+                        <h3>diamond</h3>
+
+                        <p>
+                            vstup zdarma + do VIP<br/>
+                            až pro <span>4 osoby</span><br/>
+                            sleva na baru <span>20%</span><br/>
+                            prioritní <span>šatna zdarma</span><br/>
+                            kredit <span>3.000,-</span> czk
+                        </p>
+
+                        <div class="price">9.990 czk/<span>rok</span></div>
+                    </div>
+                </div>
+
+			  </span>
+
+
+              <div id="membershipFull">
+                  <h2>VIP KLUB <span>STUDIO 54</span></h2>
+
+                  <p>chceš si užít párty na <span>101%</span>? staň se majitelem jedné ze tří klubových <span>VIP karet studia 54</span> a užívej si
+                      výhod se svými přáteli. nejen že získáte spoustu exklusivních benefitů, ale také <span>ušetříte až 20%</span> na barech.</p>
+
+                  <div id="membershipFullCols">
+                      <div class="membershipFullCol">
+                          <div class="colWrap">
+                              <div class="membershipFullInfo">
+                                  <h3><span>co je</span> VIP KLUB?</h3>
+
+                                  <p>předplacené členství na bází ročního poplatku s možností bezpečné platby kreditem na barech se slevami dle vybraného programu</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="membershipFullCol">
+                          <div class="colWrap">
+                              <div class="membershipFullInfo">
+                                  <h3><span>co mi přinese </span>VIP klub?</h3>
+
+                                  <p>jednu ze tří exklusivních VIP karet s prémiovými benefity od přednostního vstupu zdarma, šatny bez čekání, vstupu do VIP až po slevy na barech</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="membershipFullCol">
+                          <div class="colWrap">
+                              <div class="membershipFullInfo">
+                                  <h3><span>jak vstoupit </span>mezi VIP?</h3>
+
+                                  <p>vyber si jeden ze tří nabízených programů, zaregistruj se on-line, zaplať bezpečně kartou nebo hotově a začni si užívat jako VIP</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="membershipFullCol">
+                          <div class="colWrap">
+                              <div class="membershipFullType membershipFullSilver">
+                                  <h3>silver</h3>
+
+                                  <p class="membershipHeader">základní členství vhodné pro časté návštěvníky našeho
+                                      klubu</p>
+
+                                  <p class="membershipDesc"><span>stříbrná</span> klubová karta<br/><span>sleva 10%</span> na barech při
+                                      platbě kreditem<br/>vstup zdarma* <span>pro 1 osobu</span><br/>šatna zdarma<br/><span>přednostní</span> vstup<br/>přednabitý kredit ve výši <span>500,-</span> Kč<br/><span>WiFi</span> zdarma bez omezení</p>
+                                  <a href="https://members.studio54.cz/cs/max54/get/silver">koupit za 2.990,- Kč</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="membershipFullCol">
+                          <div class="colWrap">
+                              <div class="membershipFullType membershipFullGold">
+                                  <h3>gold</h3>
+
+                                  <p class="membershipHeader">členství vhodné pro náročné návštěvníky našeho klubu</p>
+
+                                  <p class="membershipDesc"><span>zlatá</span> klubová karta<br/><span>sleva 15%</span> na barech při
+                                      platbě kreditem<br/>vstup zdarma* + do VIP <span>pro 2 osoby</span><br/>šatna zdarma<br/><span>přednostní</span> vstup<br/>přednabitý kredit ve výši <span>1.000,-</span> Kč<br/><span>WiFi</span> zdarma bez omezení<br/>vstupenky na vybrané akce Studia 54<br/><span>zdarma nebo se slevou</span></p>
+                                  <a href="https://members.studio54.cz/cs/max54/get/gold">koupit za 5.990,- kč</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="membershipFullCol">
+                          <div class="colWrap">
+                              <div class="membershipFullType membershipFullPlatinum">
+                                  <h3>diamond</h3>
+
+                                  <p class="membershipHeader">prémiové členství vhodné pro nejnáročnější návštěvníky
+                                      našeho
+                                      klubu</p>
+
+                                  <p class="membershipDesc"><span>platinová</span> klubová karta<br/><span>sleva 20%</span> na barech při
+                                      platbě kreditem<br/>vstup zdarma + do VIP <span>pro 4 osoby</span><br/>šatna zdarma<br/><span>přednostní</span> vstup<br/>přednabitý kredit ve výši <span>3.000,-</span> Kč<br/><span>WiFi</span> zdarma bez omezení<br/>vstupenky na akce Studia 54 <span>zdarma</span><br/><span>přednostní odbavení</span> na barech</p>
+                                  <a href="https://members.studio54.cz/cs/max54/get/diamond">koupit za 9.990,- kč</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <p>registrace a platba členského poplatku i nabití kreditu je možná online zabezpečenou platbou <span>platební kartou on-line</span> nebo <span>hotově v klubu</span>. členství je nepřenosné. chcete zakoupit členství jako dárek? kontaktujte nás. programy <span>silver a gold</span> zahrnují vstup na všechny afterparty s vyjímkou těch, které jsou označeny jako prémiové (zejména silvestr a narozeniny klubu).</p>
+              </div>
+
+
+            </span>
+
+            <div id="moreMembershipColumn">
+                <a id="moreMembership">více info</a>
+            </div>
+            <a class="hideButton" id="lessMembership">skrýt info</a>
+        </div>
+    </section>
+    <section id="page11">
+        <div class="wrap">
+            <div id="contactForm">
+                <div id="contactFormIcon"></div>
+                <div class="form">
+                    <h3>kontaktní formulář</h3>
+
+                    <p>máte jakýkoliv dotaz, či námět na zlepšení našich služeb? kontaktujte nás pomocí formuláře</p>
+
+                                        
+                    <form method="post">
+
+                        <div class="formLabel">jméno</div>
+                        <input type="text" name="jmeno">
+
+                        <div class="formLabel">email</div>
+                        <input type="text" name="email">
+
+                        <div class="formLabel">vzkaz</div>
+                        <textarea name="text"></textarea>
+
+                        <div class="form_block">
+                            <p>Opište <strong style="color:#ffe40e;">žluté</strong> znaky z obrázku do políčka pod obrázkem.<br />
+                                Rozlišujte velikost písmen.</p>
+                            <br />
+                            <label class="pointer" for="antispam_check"><img src="/images/antispams/316ccf7018932ad5bc0acbaba2b22031.png" alt="" /></label><br />
+                            <input type="text" name="antispam_check" id="antispam_check" class="txt" maxlength="4" /><br />
+                            <input type="hidden" name="antispam_string" value="316ccf7018932ad5bc0acbaba2b22031" />
+                            <br />
+                            <br />
+                            <input type="submit" name="submit" value="odeslat" class="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="login">
+                <div id="loginIcon"></div>
+                <div class="form">
+                    <h3>přihlášení do účtu VIP klubu Studio 54</h3>
+                    <a href="https://members.studio54.cz" type="submit" id="loginButton">přihlásit se</a>
+                    <p>máš členství ve vip klubu? pak se můžeš přihlásit do svého účtu, který ti umožní prohlížení zůstatku kreditu a transkací na tvé vip kartě, měnit kontaktní údaje, prodloužit členství ve vip klubu a nabíjet kredit pomocí platební karty on-line. Nejsi ještě členem vip klubu studia 54? tak na co čekáš!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <div id="Kontakt"></div>
+    <section id="page13">
+        <h2>kontakt & mapa</h2>
+
+        <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.9729346415716!2d14.4360428!3d50.08679360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94943371e053%3A0x1171f748774a48c8!2sHybernsk%C3%A1+1613%2F38%2C+110+00+Praha-Praha+1!5e0!3m2!1scs!2scz!4v1440606697490"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="footerColumn1">
+                <div id="footerLogo"></div>
+                <div id="footerSocials">
+                    
+                    <a href="#" id="soundcloudIcon"></a>
+                    <a href="#" id="fbIcon"></a>
+                   
+                </div>
+            </div>
+            <div class="footerColumn2">
+                <div id="addressFooter">hybernská 1613/38<br/>110 00 praha 1</div>
+                <div id="phoneFooter">+420 <span>776 000 054</span></div>
+                <div id="mailFooter"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e171018113e0d0a0b1a17114b4a501d04">[email&#160;protected]</a></div>
+                <div id="hummerFooter">vip hummer service<br/ >+420 <span>776 000 054</span></div>
+                <div id="ticketsFooter">ticket service<br/>presale</div>
+            </div>
+           
+            <div class="footerColumn3">
+                <p>&copy;2026 Kimi & Art New s.r.o. | IČ 24212792<br/>
+                    <span>Všechna práva k obsahu tohoto webu jsou vyhrazena. Web & Multimedia jsou poskytovány společností &copy;2026 <a href="http://www.xpp.cz" title="Přejít na web společnosti Xperience s.r.o.">Xperience s.r.o.</a>. VIP klub je provozován na POS systému <a href="http://www.cashonline.cz" title="Přejít na webové stránky systému Cash OnLine">Cash OnLine</a>.  </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/lightbox.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            social_tools: 'false'
+        });
+    });
+</script>
+
+    </body>
+</html>

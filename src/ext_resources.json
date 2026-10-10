@@ -1,0 +1,174 @@
+[
+  {
+    "id": "dj_rio",
+    "uuid": "6d716781-6249-4738-9d90-0d1daf4f7e32"
+  },
+  {
+    "id": "pepa",
+    "uuid": "57e5172f-bed3-4e89-818e-a5c289354c31"
+  },
+  {
+    "id": "dj_richie",
+    "uuid": "37fbdc44-3e73-4dca-90c4-165609843bb8"
+  },
+  {
+    "id": "dj_carl_cross",
+    "uuid": "713e6ccc-aa6b-4716-8f4a-2ec25374c8b4"
+  },
+  {
+    "id": "dj_yan_lan",
+    "uuid": "e7f43426-e4c7-45bd-a6b4-82da4df6978b"
+  },
+  {
+    "id": "ownerTommy",
+    "uuid": "46688aa0-cc15-4bdb-abbc-1917f49e9976"
+  },
+  {
+    "id": "dj_manuel_garcia",
+    "uuid": "bd7856c9-b2c5-4fc3-a42b-9af0cbf943e9"
+  },
+  {
+    "id": "dj_terran",
+    "uuid": "4976ac64-6070-4e5e-86fa-3119178137e4"
+  },
+  {
+    "id": "dj_jose_madeira",
+    "uuid": "07dcbbe7-8c26-415b-8cc2-e99f805f98a0"
+  },
+  {
+    "id": "dj_cobra",
+    "uuid": "40d01aa8-4be1-4fd6-8884-fe178c517023"
+  },
+  {
+    "id": "dj_jumbo",
+    "uuid": "907afce6-291f-4b52-ae05-8f0622ef3596"
+  },
+  {
+    "id": "dj_jack_dorman",
+    "uuid": "0f9e4661-35f4-4b4f-b38b-3bcca5332c3e"
+  },
+  {
+    "id": "heroB",
+    "uuid": "dc79092f-7c18-49ca-ae29-b60a55f2795f"
+  },
+  {
+    "id": "ownerEnrico",
+    "uuid": "178882b9-b137-4284-ab8a-a9f11b7eddb1"
+  },
+  {
+    "id": "heroA",
+    "uuid": "9faa17ad-37a8-4fa4-a3de-1e7a3c19ddef"
+  },
+  {
+    "id": "https://unpkg.com/react@18.3.1/umd/react.production.min.js",
+    "uuid": "6c94d8d2-a915-4c6a-9838-4af54b651d0a"
+  },
+  {
+    "id": "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "uuid": "60a0f3e3-30d2-4ea6-827e-5a72d4501f00"
+  },
+  {
+    "id": "logo54",
+    "uuid": "45fcd2ea-7f29-4b48-9fa0-4664ace473fd"
+  },
+  {
+    "id": "bgParket",
+    "uuid": "5c23ba6d-25a4-4810-b4f1-e5a54b0ef638"
+  },
+  {
+    "id": "bgBar",
+    "uuid": "645a5d8d-4e95-4edf-b37a-b65baf09d1e5"
+  },
+  {
+    "id": "bgVip",
+    "uuid": "fd6310b0-b19b-4e29-b772-3e381e65ee38"
+  },
+  {
+    "id": "poster20261002",
+    "uuid": "85e30ad0-0cfb-461a-a248-0be5e772e28c"
+  },
+  {
+    "id": "poster20261004",
+    "uuid": "d0370577-dc8e-4cdf-a4ae-fde7922f9dfe"
+  },
+  {
+    "id": "dj_mark_evill",
+    "uuid": "bf972661-9f0c-57e5-8de1-f3c24844119c"
+  },
+  {
+    "id": "dj_landchi",
+    "uuid": "6f77f67c-a37f-5d37-aff6-8ea2d02097fe"
+  },
+  {
+    "id": "dj_yoppa_parrot",
+    "uuid": "c8adadf6-ab2d-5cb6-b053-9dedf37494ab"
+  },
+  {
+    "id": "dj_em_dot",
+    "uuid": "40d65d39-ab50-5b9d-9250-a3e68b89e401"
+  },
+  {
+    "id": "dj_peet_v",
+    "uuid": "e8befeb6-7129-59c7-af0c-ca51f6e11356"
+  },
+  {
+    "id": "dj_calvin_west",
+    "uuid": "85b41da9-0aed-54d6-88c1-7d26911b72b6"
+  },
+  {
+    "id": "dj_mazer",
+    "uuid": "fb2dcbb9-93c3-577c-8c9c-948d84baa056"
+  },
+  {
+    "id": "dj_jerome_levis",
+    "uuid": "e93525a8-d297-5cd6-adef-daad79f56be1"
+  },
+  {
+    "id": "dj_mike_frost",
+    "uuid": "180ab165-4857-52a1-aa5b-277c7bb7534a"
+  },
+  {
+    "id": "poster20261010",
+    "uuid": "d90236f6-e18c-5ce2-8e40-98475ecc0087"
+  },
+  {
+    "id": "poster20261011",
+    "uuid": "f32f0a03-62b8-50ef-955f-a3aa68f6698d"
+  },
+  {
+    "id": "saIntro",
+    "uuid": "b39cafd7-e62d-5c79-84b6-e35722cfb996"
+  },
+  {
+    "id": "saPepa",
+    "uuid": "fd31519a-0c19-5f01-9d31-8e9c86d04213"
+  },
+  {
+    "id": "passion400",
+    "uuid": "35dc4090-c18f-5622-8e52-40dbefda7d1a"
+  },
+  {
+    "id": "passion700",
+    "uuid": "272da401-6ef6-5f50-a891-750ae7668f9d"
+  },
+  {
+    "id": "passion900",
+    "uuid": "db6243c8-6266-599c-8f83-eeee4498cd38"
+  },
+  {
+    "id": "saPepaFig",
+    "uuid": "0fba87bf-a6d1-5df6-bd23-07dd29aaa647"
+  },
+  {
+    "id": "introFasada",
+    "uuid": "5f1c2a54-0f05-4e54-9a54-fa5ade154054"
+  },
+  {
+    "id": "djBemaOne",
+    "uuid": "38f0eb5e-876d-47ff-8ec0-25f69a35ae83"
+  },
+  {
+    "id": "kevinUnisex",
+    "uuid": "b7a3c1f4-5e9d-4a28-9c17-8d2f6b3e5c91"
+  }
+]

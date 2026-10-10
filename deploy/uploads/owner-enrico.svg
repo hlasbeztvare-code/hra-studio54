@@ -1,0 +1,84 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 460'>
+<rect width='400' height='460' fill='#eef3f6'/>
+<circle cx='70' cy='60' r='60' fill='#fff' opacity='.13'/>
+<circle cx='340' cy='120' r='34' fill='#fff' opacity='.1'/>
+<defs>
+<clipPath id='h2'><path d='M200,70 C298,70 304,110 304,174 C304,240 288,312 200,318 C112,312 96,240 96,174 C96,110 102,70 200,70 Z'/></clipPath>
+</defs>
+<!-- POLO 54 (torso) -->
+<path d='M30,460 C30,392 100,352 200,348 C300,352 370,392 370,460 Z' fill='#1b1b1d' stroke='#2b1e18' stroke-width='4'/>
+<!-- límec polo -->
+<path d='M158,352 L182,384 L200,370 L218,384 L242,352 Q200,392 158,352 Z' fill='#2a2a2d' stroke='#2b1e18' stroke-width='3'/>
+<!-- knoflíky polo -->
+<circle cx='200' cy='374' r='3' fill='#444' stroke='#111' stroke-width='1'/>
+<circle cx='200' cy='388' r='3' fill='#444' stroke='#111' stroke-width='1'/>
+<!-- logo 54 na polu -->
+<rect x='250' y='380' width='38' height='22' rx='3' fill='#fff' opacity='.95'/>
+<text x='269' y='396' text-anchor='middle' font-family='Impact,Arial Black,Arial' font-weight='900' font-size='15' fill='#1b1b1d'>54</text>
+<!-- SECURITY-like štítek: tady jen "OWNER" -->
+<text x='200' y='440' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='22' letter-spacing='3' fill='#fff'>OWNER</text>
+<!-- krk -->
+<path d='M172,282 L170,360 Q200,378 230,360 L228,282 Z' fill='#E0AE88' stroke='#2b1e18' stroke-width='4'/>
+<!-- uši -->
+<ellipse cx='88' cy='196' rx='15' ry='22' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<path d='M86,186 q-7,10 0,20' fill='none' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+<ellipse cx='312' cy='196' rx='15' ry='22' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4'/>
+<path d='M314,186 q7,10 0,20' fill='none' stroke='#2b1e18' stroke-width='2.5' stroke-linecap='round'/>
+<!-- obličej -->
+<path d='M200,70 C298,70 304,110 304,174 C304,240 288,312 200,318 C112,312 96,240 96,174 C96,110 102,70 200,70 Z' fill='#F3CBA8' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<g clip-path='url(#h2)'>
+  <!-- lesk kůže -->
+  <path d='M250,50 C290,150 275,250 220,330 L372,330 L372,50 Z' fill='#E0AE88' opacity='.5'/>
+  <!-- strniště -->
+  <path d='M110,250 Q200,236 290,250 L285,290 Q200,278 115,290 Z' fill='#5a4636' opacity='.18'/>
+</g>
+<!-- krátké blond vlasy nahoře s ježkem -->
+<path d='M110,120 C130,70 170,56 200,56 C230,56 270,70 290,120 C275,110 255,100 230,100 C215,100 205,105 200,110 C195,105 185,100 170,100 C145,100 125,110 110,120 Z' fill='#C8A878' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<path d='M140,100 L148,70 M160,98 L166,66 M180,96 L184,62 M200,96 L202,60 M220,96 L220,62 M240,98 L240,66 M260,100 L256,70' stroke='#8a6a3a' stroke-width='3' stroke-linecap='round'/>
+<!-- lesk vlasů -->
+<ellipse cx='180' cy='94' rx='28' ry='8' fill='#fff' opacity='.4' transform='rotate(-14 180 94)'/>
+<!-- obočí -->
+<path d='M126,172 Q154,160 180,170' fill='none' stroke='#8a6a3a' stroke-width='6' stroke-linecap='round'/>
+<path d='M220,170 Q246,160 274,172' fill='none' stroke='#8a6a3a' stroke-width='6' stroke-linecap='round'/>
+<!-- AVIATOR brýle: dvojité kapkovité čočky -->
+<defs>
+<linearGradient id='av1' x1='0' y1='0' x2='0' y2='1'>
+  <stop offset='0' stop-color='#8ec8ea'/>
+  <stop offset='.55' stop-color='#4a7fa8'/>
+  <stop offset='1' stop-color='#2a4b70'/>
+</linearGradient>
+<linearGradient id='av2' x1='0' y1='0' x2='0' y2='1'>
+  <stop offset='0' stop-color='#8ec8ea'/>
+  <stop offset='.55' stop-color='#4a7fa8'/>
+  <stop offset='1' stop-color='#2a4b70'/>
+</linearGradient>
+</defs>
+<!-- levá čočka -->
+<path d='M126,186 Q122,214 154,228 Q190,232 196,206 Q198,186 184,180 Q154,174 126,186 Z' fill='url(#av1)' stroke='#1b1b1d' stroke-width='4' stroke-linejoin='round'/>
+<!-- pravá čočka -->
+<path d='M204,206 Q210,232 246,228 Q278,214 274,186 Q246,174 216,180 Q202,186 204,206 Z' fill='url(#av2)' stroke='#1b1b1d' stroke-width='4' stroke-linejoin='round'/>
+<!-- most mezi brýlemi -->
+<path d='M196,194 Q200,186 204,194' fill='none' stroke='#1b1b1d' stroke-width='4' stroke-linecap='round'/>
+<!-- horní hrany rámu (double brow bar styl aviator) -->
+<path d='M126,186 Q154,172 196,186' fill='none' stroke='#1b1b1d' stroke-width='4'/>
+<path d='M204,186 Q246,172 274,186' fill='none' stroke='#1b1b1d' stroke-width='4'/>
+<!-- stranice brýlí ke uším -->
+<line x1='126' y1='192' x2='104' y2='196' stroke='#1b1b1d' stroke-width='4'/>
+<line x1='274' y1='192' x2='296' y2='196' stroke='#1b1b1d' stroke-width='4'/>
+<!-- odlesky na čočkách -->
+<path d='M140,190 Q156,186 168,194' stroke='#fff' stroke-width='4' stroke-linecap='round' opacity='.6' fill='none'/>
+<path d='M228,190 Q244,186 256,194' stroke='#fff' stroke-width='4' stroke-linecap='round' opacity='.6' fill='none'/>
+<!-- nos -->
+<path d='M198,210 C196,240 192,254 198,264' fill='none' stroke='#2b1e18' stroke-width='3.5' stroke-linecap='round'/>
+<ellipse cx='200' cy='270' rx='8' ry='4' fill='#E0AE88' opacity='.45'/>
+<!-- usmev s zuby -->
+<path d='M168,296 Q200,316 232,296' fill='none' stroke='#2b1e18' stroke-width='4.5' stroke-linecap='round'/>
+<path d='M174,298 Q200,310 226,298 L226,300 Q200,312 174,300 Z' fill='#fff' stroke='#2b1e18' stroke-width='2'/>
+<line x1='186' y1='300' x2='186' y2='308' stroke='#2b1e18' stroke-width='1.2'/>
+<line x1='198' y1='301' x2='198' y2='310' stroke='#2b1e18' stroke-width='1.2'/>
+<line x1='214' y1='300' x2='214' y2='308' stroke='#2b1e18' stroke-width='1.2'/>
+<!-- hodinky (náramek v pravé podpaží) na krátkém rukávu -->
+<rect x='60' y='410' width='28' height='16' rx='3' fill='#444' stroke='#111' stroke-width='2'/>
+<circle cx='74' cy='418' r='7' fill='#1b1b1d' stroke='#eaeaea' stroke-width='1.5'/>
+<circle cx='74' cy='418' r='2' fill='#eaeaea'/>
+</svg>

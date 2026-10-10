@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+shots/
+backup-prod/
+dist/
+*.log
+.env
+.env.*

@@ -1,0 +1,66 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 460'>
+<rect width='400' height='460' fill='#1a1312'/>
+<circle cx='70' cy='60' r='60' fill='#E2B04E' opacity='.17'/>
+<circle cx='340' cy='120' r='34' fill='#E2B04E' opacity='.12'/>
+<defs>
+<clipPath id='bhm'><path d='M200,70 C298,70 304,110 304,174 C304,240 288,312 200,318 C112,312 96,240 96,174 C96,110 102,70 200,70 Z'/></clipPath>
+</defs>
+<!-- Tričko tech house -->
+<path d='M30,460 C30,392 100,352 200,348 C300,352 370,392 370,460 Z' fill='#111214' stroke='#2b1e18' stroke-width='4'/>
+<!-- V-neck -->
+<path d='M160,352 Q200,380 240,352 Q200,392 160,352 Z' fill='#1b1b1d' stroke='#2b1e18' stroke-width='3'/>
+<!-- Logo BEMA na trico -->
+<rect x='170' y='396' width='60' height='22' rx='4' fill='#E2B04E'/>
+<text x='200' y='412' text-anchor='middle' font-family='Impact,Arial Black,Arial' font-weight='900' font-size='14' fill='#121010'>BEMA ONE</text>
+<!-- Krk -->
+<path d='M172,282 L170,360 Q200,378 230,360 L228,282 Z' fill='#8a5a3a' stroke='#2b1e18' stroke-width='4'/>
+<!-- Uši (schované pod sluchátky) -->
+<ellipse cx='88' cy='196' rx='15' ry='22' fill='#9a6240' stroke='#2b1e18' stroke-width='4'/>
+<ellipse cx='312' cy='196' rx='15' ry='22' fill='#9a6240' stroke='#2b1e18' stroke-width='4'/>
+<!-- Obličej - tmavší pleť -->
+<path d='M200,70 C298,70 304,110 304,174 C304,240 288,312 200,318 C112,312 96,240 96,174 C96,110 102,70 200,70 Z' fill='#9a6240' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<g clip-path='url(#bhm)'>
+  <path d='M250,50 C290,150 275,250 220,330 L372,330 L372,50 Z' fill='#7a4a2a' opacity='.45'/>
+  <!-- strniště -->
+  <path d='M110,250 Q200,236 290,250 L285,290 Q200,278 115,290 Z' fill='#2a1a0a' opacity='.3'/>
+</g>
+<!-- Krátké tmavé vlasy / fade -->
+<path d='M100,118 C125,56 170,46 200,46 C230,46 275,56 300,118 C275,98 245,88 215,90 C205,90 195,92 185,90 C155,88 125,98 100,118 Z' fill='#1a0f08' stroke='#2b1e18' stroke-width='4' stroke-linejoin='round'/>
+<!-- Obočí -->
+<path d='M118,170 Q148,160 180,170' fill='none' stroke='#1a0f08' stroke-width='6' stroke-linecap='round'/>
+<path d='M220,170 Q252,160 282,170' fill='none' stroke='#1a0f08' stroke-width='6' stroke-linecap='round'/>
+<!-- Oči -->
+<ellipse cx='148' cy='194' rx='17' ry='11' fill='#fff' stroke='#2b1e18' stroke-width='3'/>
+<ellipse cx='252' cy='194' rx='17' ry='11' fill='#fff' stroke='#2b1e18' stroke-width='3'/>
+<circle cx='150' cy='196' r='7' fill='#4a2a0a'/>
+<circle cx='254' cy='196' r='7' fill='#4a2a0a'/>
+<circle cx='152' cy='194' r='3' fill='#111'/>
+<circle cx='256' cy='194' r='3' fill='#111'/>
+<circle cx='154' cy='190' r='2' fill='#fff'/>
+<circle cx='258' cy='190' r='2' fill='#fff'/>
+<!-- Nos -->
+<path d='M198,208 C196,240 192,254 198,264' fill='none' stroke='#2b1e18' stroke-width='3.5' stroke-linecap='round'/>
+<ellipse cx='200' cy='270' rx='8' ry='4' fill='#5a3a1a' opacity='.5'/>
+<!-- Úsměv -->
+<path d='M158,288 Q200,316 242,288' fill='none' stroke='#2b1e18' stroke-width='5' stroke-linecap='round'/>
+<path d='M166,292 Q200,314 234,292 L234,294 Q200,314 166,294 Z' fill='#fff' stroke='#2b1e18' stroke-width='2'/>
+<!-- Bradka -->
+<path d='M178,314 Q200,328 222,314 Q200,340 178,314 Z' fill='#1a0f08' stroke='#2b1e18' stroke-width='3' opacity='.85'/>
+<!-- SLUCHÁTKA (Pioneer HDJ) -->
+<!-- oblouk přes hlavu -->
+<path d='M90,174 Q200,76 310,174' fill='none' stroke='#121010' stroke-width='10' stroke-linecap='round'/>
+<path d='M90,174 Q200,80 310,174' fill='none' stroke='#444' stroke-width='4' stroke-linecap='round'/>
+<!-- leva slucha -->
+<ellipse cx='88' cy='196' rx='26' ry='32' fill='#121010' stroke='#2b1e18' stroke-width='3'/>
+<ellipse cx='88' cy='196' rx='18' ry='24' fill='#1b1b1d' stroke='#444' stroke-width='2'/>
+<circle cx='88' cy='196' r='8' fill='#E2B04E'/>
+<circle cx='88' cy='196' r='3' fill='#121010'/>
+<!-- prava slucha -->
+<ellipse cx='312' cy='196' rx='26' ry='32' fill='#121010' stroke='#2b1e18' stroke-width='3'/>
+<ellipse cx='312' cy='196' rx='18' ry='24' fill='#1b1b1d' stroke='#444' stroke-width='2'/>
+<circle cx='312' cy='196' r='8' fill='#E2B04E'/>
+<circle cx='312' cy='196' r='3' fill='#121010'/>
+<!-- odlesky -->
+<ellipse cx='82' cy='186' rx='4' ry='8' fill='#fff' opacity='.3'/>
+<ellipse cx='306' cy='186' rx='4' ry='8' fill='#fff' opacity='.3'/>
+</svg>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dj_rio",
+    "uuid": "6d716781-6249-4738-9d90-0d1daf4f7e32"
+  },
+  {
+    "id": "pepa",
+    "uuid": "57e5172f-bed3-4e89-818e-a5c289354c31"
+  },
+  {
+    "id": "dj_richie",
+    "uuid": "37fbdc44-3e73-4dca-90c4-165609843bb8"
+  },
+  {
+    "id": "dj_carl_cross",
+    "uuid": "713e6ccc-aa6b-4716-8f4a-2ec25374c8b4"
+  },
+  {
+    "id": "dj_yan_lan",
+    "uuid": "e7f43426-e4c7-45bd-a6b4-82da4df6978b"
+  },
+  {
+    "id": "djTommy",
+    "uuid": "46688aa0-cc15-4bdb-abbc-1917f49e9976"
+  },
+  {
+    "id": "dj_manuel_garcia",
+    "uuid": "bd7856c9-b2c5-4fc3-a42b-9af0cbf943e9"
+  },
+  {
+    "id": "dj_terran",
+    "uuid": "4976ac64-6070-4e5e-86fa-3119178137e4"
+  },
+  {
+    "id": "dj_jose_madeira",
+    "uuid": "07dcbbe7-8c26-415b-8cc2-e99f805f98a0"
+  },
+  {
+    "id": "dj_cobra",
+    "uuid": "40d01aa8-4be1-4fd6-8884-fe178c517023"
+  },
+  {
+    "id": "dj_jumbo",
+    "uuid": "907afce6-291f-4b52-ae05-8f0622ef3596"
+  },
+  {
+    "id": "dj_jack_dorman",
+    "uuid": "0f9e4661-35f4-4b4f-b38b-3bcca5332c3e"
+  },
+  {
+    "id": "heroB",
+    "uuid": "dc79092f-7c18-49ca-ae29-b60a55f2795f"
+  },
+  {
+    "id": "djEnrico",
+    "uuid": "178882b9-b137-4284-ab8a-a9f11b7eddb1"
+  },
+  {
+    "id": "heroA",
+    "uuid": "9faa17ad-37a8-4fa4-a3de-1e7a3c19ddef"
+  },
+  {
+    "id": "https://unpkg.com/react@18.3.1/umd/react.production.min.js",
+    "uuid": "6c94d8d2-a915-4c6a-9838-4af54b651d0a"
+  },
+  {
+    "id": "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js",
+    "uuid": "60a0f3e3-30d2-4ea6-827e-5a72d4501f00"
+  },
+  {
+    "id": "logo54",
+    "uuid": "45fcd2ea-7f29-4b48-9fa0-4664ace473fd"
+  }
+]
