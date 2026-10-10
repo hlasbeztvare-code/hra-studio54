@@ -1,0 +1,13 @@
+{
+  "pepa": "„Dobrý ráno. Jméno, a pak uvidíme.“",
+  "information": [
+    "02:54. Pepa tě pustil. Vydrž do 14:00, uloupni podpis od každýho DJe, buď v TOP 10.",
+    "Legendy se nerodí v Uberu domů."
+  ],
+  "rules": [
+    "Zadej jméno (max. 18 znaků) a dej Start. Vrátný Pepa ti položí 4 otázky.",
+    "Za odpovědi sbíráš body: potřebuješ aspoň 3. Hloupá odpověď = vyhazov hned.",
+    "Když tě nepustí, můžeš se postavit znovu do fronty – stojí to 20 minut noci."
+  ],
+  "gameDataHash": "e6a16b173336466ea770e0ff77a5b5b20cee7eefdfe51ae873c98cd3074b83d4"
+}

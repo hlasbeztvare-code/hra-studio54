@@ -2,15 +2,18 @@
 import http from "node:http";
 import { readFileSync, existsSync } from "node:fs";
 import { build } from "./build.mjs";
+import { resolve, extname } from "node:path";
 
 const PORT = Number(process.env.PORT) || 5454;
 
 http.createServer((req, res) => {
   const path = req.url.split("?")[0];
-  const MIME = { png: "image/png", jpg: "image/jpeg", ico: "image/x-icon", webmanifest: "application/manifest+json" };
-  const ext = path.split(".").pop();
-  if (path !== "/" && path !== "/index.html" && MIME[ext] && /^\/[\w.-]+$/.test(path) && existsSync("dist" + path)) {
-    res.writeHead(200, { "Content-Type": MIME[ext] }).end(readFileSync("dist" + path));
+  const MIME = { png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", webp: "image/webp", svg: "image/svg+xml", woff2: "font/woff2", ico: "image/x-icon", webmanifest: "application/manifest+json" };
+  const ext = extname(path).slice(1);
+  const root = resolve("deploy");
+  const file = resolve(root, "." + path);
+  if (MIME[ext] && file.startsWith(root + "/") && existsSync(file)) {
+    res.writeHead(200, { "Content-Type": MIME[ext] }).end(readFileSync(file));
     return;
   }
   if (path !== "/" && path !== "/index.html") {

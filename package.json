@@ -5,6 +5,11 @@
   "scripts": {
     "dev": "node serve.mjs",
     "build": "node build.mjs",
-    "unpack": "node unpack.mjs"
+    "unpack": "node unpack.mjs",
+    "check:intro": "node scripts/check-intro.mjs",
+    "preview:intro": "node scripts/preview-intro.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
   }
 }

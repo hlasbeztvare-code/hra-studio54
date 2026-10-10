@@ -14,7 +14,8 @@ const replaceBlock = (html, t, content) => {
 const safeJson = (v) => JSON.stringify(v).replaceAll("</", "<" + String.fromCharCode(92) + "u002F");
 
 export function build() {
-  let html = fs.readFileSync("dist/original.html", "utf8");
+  fs.mkdirSync("dist", { recursive: true });
+  let html = fs.readFileSync("deploy/original.html", "utf8");
   const index = JSON.parse(fs.readFileSync("src/assets.json", "utf8"));
   const manifest = {};
   const tpl = fs.readFileSync("src/template.html", "utf8");

@@ -1315,6 +1315,67 @@ div:has(> .ev-bub),div:has(> .gls:not(.bubble)),[data-screen-label="Konec"]{back
 .h7-os.os-ios>.c-ios>h4::after,.h7-os.os-and>.c-and>h4::after,.h7-os.os-pc>.c-pc>h4::after{content:" · tvoje zařízení";color:#F6DA92}
 .h7-sym{display:inline-block;padding:0 6px;border-radius:6px;background:#2a241a;border:1px solid rgba(226,176,78,.5);font-weight:800;white-space:nowrap}
 @media (max-width:420px){.h7-head b{font-size:25px}.h7-tab{padding:7px 9px;font-size:12px}.h7-sec p,.h7-sec ul,.h7-sec ol{font-size:15px!important}}
+/* Layered intro: the stage and all scene anchors share one uncropped 16:9 coordinate space. */
+.game-root.s54-intro-root{zoom:1;--z:1}
+.game-root .in5{background:#120808;isolation:isolate}
+.s54-scene{--s54-yellow:#ffe600;--s54-ink:#121010;--s54-pink:#f700ce;position:absolute;left:50%;top:50%;width:min(100vw,177.7778vh);aspect-ratio:16/9;transform:translate(-50%,-50%);container-type:inline-size;isolation:isolate;font-family:'Passion CZ',sans-serif}
+.s54-art{position:absolute;inset:0;z-index:-1;background:url('/uploads/intro-artwork.png?v=__BUILD_V__') center/100% 100% no-repeat}
+.s54-logo-link{position:absolute;left:5%;top:5%;width:23%;height:20%;border-radius:10px}
+.s54-ticker{position:absolute;inset:0 0 auto;height:4.5%;z-index:10;overflow:hidden;background:rgba(8,8,9,.97);border:1px solid var(--s54-yellow);border-radius:10px;display:flex;align-items:center;color:var(--s54-yellow);font-size:clamp(14px,1.15cqw,22px);font-weight:700;letter-spacing:.02em;text-transform:uppercase}
+.s54-ticker-track{display:flex;width:max-content;flex:none;animation:s54-rules-left 65s linear infinite}
+.s54-ticker-copy{display:flex;align-items:center;gap:2.5em;padding-right:2.5em;flex:none;white-space:nowrap}
+.s54-ticker-copy b{padding-left:1.5em}.s54-ticker-copy span::before{content:'•';margin-right:1.2em;color:var(--s54-pink)}
+@keyframes s54-rules-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.s54-ticker:hover .s54-ticker-track,.s54-ticker:focus .s54-ticker-track{animation-play-state:paused}
+.s54-top{position:absolute;z-index:8;right:1.4%;top:5.7%;width:16%;padding:.5cqw .8cqw;border:1px solid var(--s54-yellow);border-radius:12px;background:rgba(7,7,10,.89);color:#fff;box-shadow:0 0 15px #ffe60020}
+.s54-top.is-closed{display:none}
+.s54-top-head{display:flex;align-items:center;justify-content:space-between;gap:4px;margin-bottom:.35cqw;color:var(--s54-yellow)}
+.s54-top button{all:unset;cursor:pointer;font:700 clamp(14px,1.12cqw,22px)/1 'Passion CZ',sans-serif;text-transform:uppercase}
+.s54-top .s54-top-close{display:grid;place-items:center;width:24px;height:24px;flex:none;border-radius:50%;background:var(--s54-yellow);color:#121010;font-size:22px}
+.s54-row{display:grid;grid-template-columns:1.25em minmax(0,1fr) auto;gap:.4cqw;font-size:clamp(12px,.78cqw,15px);line-height:1.1;font-variant-numeric:tabular-nums}
+.s54-row span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.s54-row span:first-child,.s54-row span:last-child{color:var(--s54-yellow)}
+.s54-stats{position:absolute;z-index:8;right:1.7%;top:29%;padding:4px 8px;border-radius:5px;background:#080809c9;color:#fff;font-size:clamp(12px,.82cqw,16px);line-height:1.3;font-variant-numeric:tabular-nums}
+.s54-speech{position:absolute;z-index:5;padding:1.1cqw 1cqw;background:#fffdf7;color:var(--s54-ink);border:3px solid var(--s54-ink);border-radius:28% 24% 25% 15% / 22% 29% 20% 25%;box-shadow:3px 4px 0 var(--s54-ink);text-align:center;font-size:clamp(18px,1.55cqw,30px);line-height:1.08;font-weight:700}
+.s54-speech{animation:s54-speech-in .5s ease-out both}.s54-speech span{display:block}
+@keyframes s54-speech-in{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+.s54-speech::before,.s54-speech::after{content:'';position:absolute;width:0;height:0;border-style:solid;pointer-events:none}
+.s54-speech::before{left:-20px;bottom:9px;border-width:10px 23px 10px 0;border-color:transparent var(--s54-ink) transparent transparent;transform:rotate(-25deg)}
+.s54-speech::after{left:-13px;bottom:13px;border-width:7px 18px 7px 0;border-color:transparent #fffdf7 transparent transparent;transform:rotate(-25deg)}
+.s54-pepa{left:33%;top:29%;width:14%}
+.s54-woman{right:1.7%;top:32%;width:17%;font-size:clamp(16px,1.35cqw,26px)}
+.s54-poster{position:absolute;top:49%;width:17%;height:36%;padding:.45cqw;border:3px solid #121010;background:#121010;border-radius:5px;box-shadow:0 0 0 2px #ffc56b,5px 6px 0 #160905,0 0 20px #ff6a002b}
+.s54-poster-left{left:2.5%}.s54-poster-right{right:1.5%}
+.s54-poster img{display:block;width:100%;height:100%;object-fit:contain;border-radius:2px;filter:none}
+.s54-start{all:unset;position:absolute;z-index:6;left:50%;bottom:8%;transform:translateX(-50%) rotate(-3deg);cursor:pointer;font:900 6cqw/.85 'Passion CZ',sans-serif;letter-spacing:.015em;color:var(--s54-yellow);-webkit-text-stroke:5px var(--s54-ink);paint-order:stroke fill;text-shadow:5px 7px 0 #121010,0 0 18px #ffe60030;transition:transform .18s ease,color .18s ease}
+.s54-start:hover{transform:translateX(-50%) rotate(-3deg) scale(1.04);color:#fff354}.s54-start:active{transform:translateX(-50%) rotate(-3deg) scale(.98)}
+.s54-hud{position:absolute;z-index:8;left:1.2%;right:1.2%;bottom:1.6%;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.s54-hud-left,.s54-hud-right{display:flex;align-items:center;gap:.8cqw}
+.s54-pill,.s54-record{all:unset;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:.45cqw;min-height:44px;padding:.45cqw 1cqw;border:2px solid #121010;border-radius:15px;background:var(--s54-yellow);color:#121010;font:700 clamp(14px,1.2cqw,24px)/1 'Passion CZ',sans-serif;text-transform:uppercase;box-shadow:2px 3px 0 #121010,0 0 14px #ffe60020;white-space:nowrap}
+.s54-pill{cursor:pointer;transition:transform .15s ease,background .15s ease}.s54-pill:hover{transform:translateY(-2px);background:#fff354}.s54-pill:active{transform:translateY(1px)}
+.s54-record{background:#121010e8;color:var(--s54-yellow);border-color:var(--s54-yellow)}
+.s54-hud svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.s54-scene :is(button,a,[tabindex]):focus-visible{outline:3px solid #fff;outline-offset:5px}
+.game-root .in5-wrap.s54-dialogs{display:contents!important}.s54-dialogs>.in5-nf-ov{z-index:50}
+@media (max-width:899px),(max-aspect-ratio:5/4){
+ .game-root .in5{overflow-y:auto}
+ .s54-scene{position:relative;left:0;top:0;transform:none;width:100%;min-height:100svh;aspect-ratio:auto;padding:64px 18px 24px;display:flex;flex-direction:column;align-items:center;gap:18px}
+ .s54-art{background-size:auto 68vh;background-position:50% 40px;background-color:#1a0d0d}
+ .s54-logo-link{position:relative;align-self:flex-start;left:auto;top:auto;width:44%;height:95px;margin-bottom:200px}
+ .s54-ticker{position:absolute;top:0;height:44px;font-size:16px;border-radius:0}
+ .s54-top{position:relative;right:auto;top:auto;width:min(100%,460px);padding:12px 16px;order:4}
+ .s54-top-head button{font-size:20px}.s54-row{font-size:16px;gap:8px}
+ .s54-stats{position:relative;right:auto;top:auto;font-size:14px;order:5}
+ .s54-speech{position:relative;left:auto;right:auto;top:auto;width:min(100%,460px);padding:14px 18px;font-size:22px;order:2}
+ .s54-woman{font-size:20px}
+ .s54-start{position:relative;left:auto;bottom:auto;transform:rotate(-3deg);font-size:90px;margin:8px 0 32px;order:3}
+ .s54-start:hover{transform:rotate(-3deg) scale(1.04)}.s54-start:active{transform:rotate(-3deg) scale(.98)}
+ .s54-poster{position:relative;left:auto;right:auto;top:auto;width:min(72%,300px);height:auto;aspect-ratio:1/1.414;padding:5px;order:6}
+ .s54-hud{position:relative;inset:auto;flex-wrap:wrap;justify-content:center;gap:10px;order:7;width:100%}
+ .s54-hud-left,.s54-hud-right{flex-wrap:wrap;justify-content:center;gap:10px}
+ .s54-pill,.s54-record{font-size:18px;min-height:44px;padding:10px 16px;gap:8px}
+}
+@media (prefers-reduced-motion:reduce){.s54-ticker-track,.s54-speech{animation:none}.s54-ticker{overflow-x:auto}.s54-ticker-copy[aria-hidden]{display:none}.s54-start,.s54-pill{transition:none}}
+
 </style>
 </helmet>
 <div data-screen-label="Hra" class="{{ rootCls }}" style="position:fixed;inset:0;background:#000;color:#F4ECD8;font-family:'Barlow',sans-serif;overflow:hidden">
@@ -1471,29 +1532,32 @@ div:has(> .ev-bub),div:has(> .gls:not(.bubble)),[data-screen-label="Konec"]{back
 
   <sc-if value="{{ isIntro }}" hint-placeholder-val="{{ true }}">
     <div data-screen-label="Intro" class="in5">
-      <div class="in5-bg"></div>
-      <span class="in5-arr-off" aria-hidden="true"></span>
-      <div class="in5-wrap">
-        <div class="in5-head">
-          <div class="in5-logo bub"><a href="https://www.studio54.cz" target="_blank" rel="noopener" title="www.studio54.cz" style="display:inline-flex;align-items:center;line-height:0"><img data-lsrc="uploads/logo54.webp" alt="Studio 54" class="logo54 in5-logoimg"></a><span>Hybernská 38 · Praha</span></div>
-          <div class="in5-date bub gold"><b class="d">{{ nDay }}</b><b class="big">{{ nDate }}</b><span class="n">{{ nName }}</span><span>start <i>{{ nStart }}</i> · do 14:00</span></div>
-        </div>
-        <div class="in5-pepa bub say"><b>Pepa · face control</b>„Dobrý ráno. Jméno, a pak uvidíme.“</div>
-        <div class="in5-top bub" sc-camel-on-click="{{ openLb }}"><b class="in5-toph"><i></i>Pořadí · TOP 10</b><div class="in5-tl"><sc-for list="{{ lbTop10 }}" as="r" hint-placeholder-count="10"><div class="in5-tr" style="color:{{ r.c }}"><span>{{ r.p }}</span><span>{{ r.n }}</span><span>{{ r.s }}</span></div></sc-for></div></div>
-        <div class="in5-right">
-          <h1 class="sa-title in5-title"><span class="in5-brand">Studio 54</span><span class="in5-neon">club cafe bar</span><span data-t="Přežij">Přežij</span><span class="g" data-t="after.">after.</span></h1>
-          <p class="in5-card bub say2">02:54. Pepa tě pustil. Vydrž do 14:00, uloupni podpis od každýho DJe, buď v TOP 10. <span>Legendy se nerodí v Uberu domů.</span></p>
-          <span class="in5-start-cover" aria-hidden="true"></span>
-          <button class="in5-giant" sc-camel-on-click="{{ bigStart }}" aria-label="Start"><span class="in5-giant-t">START</span></button>
-          <div class="in5-sub">
-            <button class="in5-mini" sc-camel-on-click="{{ openLb }}">Pořadí</button>
-            <button class="in5-mini" sc-camel-on-click="{{ openInst }}">Uložit na plochu</button>
-            <sc-if value="{{ statsOn }}" hint-placeholder-val="{{ false }}"><span class="in5-stats">{{ statsTxt }}</span></sc-if>
-            <span class="in5-best">{{ bestTxt }}</span>
-            <button class="in5-mini in5-mini--help" sc-camel-on-click="{{ toggleHelp }}" aria-label="Jak hrát"><i>?</i><span>Jak hrát</span></button>
+      <div class="s54-scene">
+        <div class="s54-art" aria-hidden="true"></div>
+        <div class="s54-ticker" tabindex="0" aria-label="Pepa u dveří">
+          <div class="s54-ticker-track">
+            <div class="s54-ticker-copy"><b>1 · Pepa u dveří</b><sc-for list="{{ introRules }}" as="rule"><span>{{ rule.t }}</span></sc-for></div>
+            <div class="s54-ticker-copy" aria-hidden="true"><b>1 · Pepa u dveří</b><sc-for list="{{ introRules }}" as="rule"><span>{{ rule.t }}</span></sc-for></div>
           </div>
         </div>
-        <span class="in5-ver" aria-hidden="true">v __BUILD_SHORT__</span>
+        <a class="s54-logo-link" href="https://www.studio54.cz" target="_blank" rel="noopener" aria-label="Studio 54"></a>
+        <aside class="{{ introTopCls }}" id="intro-top10">
+          <div class="s54-top-head"><button sc-camel-on-click="{{ openLb }}">Pořadí · TOP 10</button><button class="s54-top-close" sc-camel-on-click="{{ toggleIntroTop }}" aria-label="Zavřít">×</button></div>
+          <div class="s54-top-rows"><sc-for list="{{ lbTop10 }}" as="r" hint-placeholder-count="10"><div class="s54-row"><span>{{ r.p }}</span><span>{{ r.n }}</span><span>{{ r.s }}</span></div></sc-for></div>
+        </aside>
+        <sc-if value="{{ statsOn }}" hint-placeholder-val="{{ false }}"><span class="s54-stats">{{ statsTxt }}</span></sc-if>
+        <div key="{{ introPepaKey }}" class="s54-speech s54-pepa"><span>{{ introPepa }}</span></div>
+        <div key="{{ introWomanKey }}" class="s54-speech s54-woman"><span>{{ introInformation }}</span></div>
+        <div class="s54-poster s54-poster-left"><img src="/uploads/intro-landchi.jpeg?v=__BUILD_V__" alt="Program noci"></div>
+        <div class="s54-poster s54-poster-right"><img src="/uploads/intro-mazer.jpeg?v=__BUILD_V__" alt="Program další noci"></div>
+        <button class="s54-start" sc-camel-on-click="{{ bigStart }}" aria-label="Start"><span>START!</span></button>
+        <nav class="s54-hud">
+          <div class="s54-hud-left"><button class="s54-pill" sc-camel-on-click="{{ toggleIntroTop }}" aria-expanded="{{ introTopOpen }}" aria-controls="intro-top10"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v6a5 5 0 0 1-10 0zM7 5H3v3a4 4 0 0 0 4 4m10-7h4v3a4 4 0 0 1-4 4M12 14v6m-5 1h10"/></svg>Pořadí</button>
+          <button class="s54-pill" sc-camel-on-click="{{ openInst }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Uložit na plochu</button></div>
+          <div class="s54-hud-right"><span class="s54-record"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 4 4 5-7 5 7 4-4-2 14H5z"/></svg>{{ bestTxt }}</span><button class="s54-pill" sc-camel-on-click="{{ toggleHelp }}" aria-label="Jak hrát"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10v7m0-11v1"/></svg>Jak hrát</button></div>
+        </nav>
+      </div>
+      <div class="in5-wrap s54-dialogs">
         <sc-if value="{{ nameFormOn }}" hint-placeholder-val="{{ false }}">
           <div class="in5-nf-ov" sc-camel-on-click="{{ closeName }}">
             <div class="in5-nf" sc-camel-on-click="{{ nfStop }}">
@@ -1505,10 +1569,6 @@ div:has(> .ev-bub),div:has(> .gls:not(.bubble)),[data-screen-label="Konec"]{back
             </div>
           </div>
         </sc-if>
-        <div class="in5-posters">
-          <sc-if value="{{ posterOn }}" hint-placeholder-val="{{ false }}"><div class="in5-pst p1"><span>{{ poster1L }}</span><img data-lsrc="{{ posterSrc }}" alt="Program noci"></div></sc-if>
-          <sc-if value="{{ poster2On }}" hint-placeholder-val="{{ false }}"><div class="in5-pst p2"><span>{{ poster2L }}</span><img data-lsrc="{{ poster2Src }}" alt="Program další noci"></div></sc-if>
-        </div>
       </div>
       <sc-if value="{{ helpOn }}" hint-placeholder-val="{{ false }}">
         <div class="h7-ov">
@@ -1919,11 +1979,16 @@ const QUIZ=[
 const DRBY=['Péťa je prej zamilovanej, ale to ode mě nemáš.','Pepa se naposledy usmál v roce 2019. Byl to omyl.','Denisa umí otevřít pivo okem. Neptej se, jak to vím.','Ta koule nad parketem stála víc než můj byt. A má hezčí výhled.','Včera tu někdo nechal protézu. Pořád si pro ni nikdo nepřišel.','Pepa má doma kočku. Jmenuje se Face Control.','Ten chlápek v kšiltovce u záchodů? Pepa ho vynesl. Pod paží. Jako baguetu.','Kevin a Perry ze záchodů šetřej na Ibizu od roku 2000. Mají 340 Kč.','Jeden DJ si tu prej nalil vodku do oka. Pepa mu pak nalil vodu do druhýho. Pro rovnováhu.','Pepa viděl Klub sráčů čtyřicetkrát. Na vrátnýho z Amnesie kouká jako na učitele.','Candice a Gemma sem choděj každou neděli a ještě nikdy s nikým nepromluvily. Je to jejich koníček.','Kevin tvrdí, že je adoptovanej. Kvůli zrzavýmu chlupu na mýdle. Doma.','Perry říká Kevinově mámě „vy rošťando“. Kevin to nese hodně špatně.','DJovi Paulu Bulvovi kluci říkaj Tragéd. Na Ibize prej na lodi… radši se neptej. Kevin od tý doby neplave.'];
 const lbView=l=>{const seen={},o=[];(l||[]).slice().sort((a,b)=>b.s-a.s).forEach(r=>{const k=String(r.n||'').trim().toLowerCase();if(!k||seen[k])return;seen[k]=1;o.push(r);});return o;};
 const INIT={phase:'intro',m:OPEN,en:100,vibe:40,cash:1500,rep:0,score:0,loc:'parket',cards:[],vip:false,shot:false,lounge:0,ev:null,used:[],nextEv:205,toast:'',tk:0,qi:0,gs:0,line:QS[0].q,gdone:false,grej:false,wait:0,dancing:false,combo:0,best:0,perf:0,fb:'',fbc:'#F4ECD8',beat:0,end:null,lost:0,final:0,q:0,qOn:false,qB:null,qN:false,qDone:0,mixOK:0,mixCd:0,catchOK:0,catchCd:0,quizOK:0,quizCd:0,fl:{},mg:null,pee:15,peeW:false,wcCd:0,wcKey:false,jarm:0,nameFormOn:false};
+const INTRO_COPY={"pepa": "„Dobrý ráno. Jméno, a pak uvidíme.“", "information": ["02:54. Pepa tě pustil. Vydrž do 14:00, uloupni podpis od každýho DJe, buď v TOP 10.", "Legendy se nerodí v Uberu domů."], "rules": ["Zadej jméno (max. 18 znaků) a dej Start. Vrátný Pepa ti položí 4 otázky.", "Za odpovědi sbíráš body: potřebuješ aspoň 3. Hloupá odpověď = vyhazov hned.", "Když tě nepustí, můžeš se postavit znovu do fronty – stojí to 20 minut noci."]};
 class Component extends DCLogic {
-  state=Object.assign({},INIT,{bestScore:0});
+  state=Object.assign({},INIT,{bestScore:0,introFrame:0,introTopOpen:true});
   dotsRef=React.createRef(); ringRef=React.createRef(); laneRef=React.createRef(); glassRef=React.createRef();
   ping54(k){try{fetch('/api/hit',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({k})}).then(r=>r.ok?r.json():null).then(j=>{if(j&&typeof j.visits==='number')this.setState({st:j});}).catch(()=>{});}catch(e){}}
   componentDidMount(){
+    this.introIv=setInterval(()=>{
+      const scene=document.querySelector('.s54-scene');
+      if(this.state.phase==='intro'&&document.visibilityState==='visible'&&!this.state.help&&!this.state.nameFormOn&&!this.state.mg&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&scene&&!scene.querySelector('.s54-speech:hover')&&!scene.matches(':focus-within'))this.setState(x=>({introFrame:x.introFrame+1}));
+    },9000);
     this.mount=Date.now();this.ping54('visit');
     try{this.setState({bestScore:+(localStorage.getItem('s54g_best')||0),lbName:localStorage.getItem('s54g_name')||''});}catch(x){}
     this.lbLoad();
@@ -1933,7 +1998,7 @@ class Component extends DCLogic {
     addEventListener('keydown',this.kd);
     const loop=()=>{this.raf=requestAnimationFrame(loop);this.frameDance();this.frameDots();this.frameCatch();};loop();
   }
-  componentWillUnmount(){clearTimeout(this.mgT);clearInterval(this.lbIv);clearInterval(this.iv);clearInterval(this.lz);clearInterval(this.lz2);cancelAnimationFrame(this.raf);removeEventListener('keydown',this.kd);}
+  componentWillUnmount(){clearInterval(this.introIv);clearTimeout(this.mgT);clearInterval(this.lbIv);clearInterval(this.iv);clearInterval(this.lz);clearInterval(this.lz2);cancelAnimationFrame(this.raf);removeEventListener('keydown',this.kd);}
   get df(){return DF[this.props.obtiznost??'normální']||1;}
   djSay(k,dj){const b=this.djB||(this.djB={});if(!b[k]||!b[k].length)b[k]=shuf(DJ_SAY[k].map((_,i)=>i));const t=DJ_SAY[k][b[k].pop()].split('{d}').join(dj||'DJ');return FEM[dj]?femTxt(t):t;}
   say(t){this.setState({toast:t,tk:Date.now()});}
@@ -2106,7 +2171,14 @@ class Component extends DCLogic {
     const bigStart=()=>{this.setState({nameFormOn:true,nameErr:''});setTimeout(()=>{const el=document.querySelector('.in5-nf-in');if(el)el.focus();},80);};
     return {
       dotsRef:this.dotsRef, ringRef:this.ringRef, laneRef:this.laneRef, moveTxt:s.dmove||'', fbKey:String(s.beat)+String(s.fb),
-      rootCls:'game-root loc-'+s.loc, inClub:s.phase==='club', isIntro:s.phase==='intro', isGate:s.phase==='gate', isEnd:s.phase==='end',
+      introPepaKey:'pepa-'+String(s.introFrame||0),introWomanKey:'woman-'+String(s.introFrame||0),
+      introPepa:[INTRO_COPY.pepa,...QS.map(q=>q.q)][(s.introFrame||0)%(QS.length+1)],
+      introInformation:INTRO_COPY.information[(s.introFrame||0)%INTRO_COPY.information.length],
+      introRules:INTRO_COPY.rules.map(t=>({t})),
+      introTopCls:'s54-top'+(s.introTopOpen===false?' is-closed':''),
+      introTopOpen:s.introTopOpen!==false,
+      toggleIntroTop:()=>this.setState(x=>({introTopOpen:x.introTopOpen===false})),
+      rootCls:'game-root'+(s.phase==='intro'?' s54-intro-root':'')+' loc-'+s.loc, inClub:s.phase==='club', isIntro:s.phase==='intro', isGate:s.phase==='gate', isEnd:s.phase==='end',
       ...(()=>{const k=s.phase!=='club'?'a':({parket:'p',dj:'b',bar:'r',vip:'v',wc:'a'})[s.loc]||'a';return {opA:k==='a'?1:0,opB:k==='b'?1:0,opP:k==='p'?1:0,opR:k==='r'?1:0,opV:k==='v'?1:0};})(), dotsOp:s.phase==='club'?1:0.3,
       bgFilter:s.phase==='club'&&s.loc==='wc'?'saturate(.75) sepia(.25) hue-rotate(40deg) brightness(.68)':s.phase==='club'?'saturate('+(0.9+s.vibe/400).toFixed(2)+') brightness('+(0.86+s.vibe/700).toFixed(2)+')':'brightness(.45)',
       clock:hm(s.m), leftTxt:'do konce '+hm(Math.max(0,CLOSE-s.m)),
