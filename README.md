@@ -19,4 +19,4 @@ npm run preview:intro
 
 The browser check requires the preview server to be running. The check creates `shots/check-intro-*.png` with test fixtures. `npm run preview:intro` creates `shots/intro-1920x1080.png`, `shots/intro-1440x900.png` and a mobile screenshot using the original live leaderboard and statistics read through GET requests. The personal record remains device-local. Preview requests never write to the shared APIs.
 
-The redesign awaits visual approval; deployment and additional gameplay work are separate steps.
+The redesign was deployed with user approval on October 10, 2026: https://hra.l-code-dynamics.com. Live checks passed in both desktop sizes; see the design contract for the deployment record. Additional gameplay work remains a separate task.

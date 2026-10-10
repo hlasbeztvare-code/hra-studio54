@@ -43,4 +43,13 @@ npm run build
 
 ## Approval boundary
 
-This change is the visual preview phase only. Do not deploy it or proceed with new gameplay features before the user approves the screenshots. The existing START, help, installation instructions and leaderboard data flow remain wired to their existing implementations. No backend or game-rule changes belong in this redesign.
+The user approved deployment on October 10, 2026. Further gameplay features remain a separate task requiring their approval. The existing START, help, installation instructions and leaderboard data flow remain wired to their existing implementations. No backend or game-rule changes belong in this redesign.
+
+## Deployment verification — October 10, 2026
+
+- Production: https://hra.l-code-dynamics.com
+- Visual source commit: `2e9fbe9`.
+- Cloudflare version: `2f78f1d5-c0e3-4002-8293-9f3805397dcb`.
+- Build and all eight regression groups passed before deployment. Live Chrome checks passed at 1920×1080 and 1440×900: original names/scores, artwork and posters, leaderboard toggle, START/name modal, uncropped stage and no runtime errors. Live index, statistics and leaderboard GET endpoints returned successfully. Preview visit writes were intercepted.
+- `deploy/.assetsignore` excludes macOS metadata from published assets; the live `/.DS_Store` path returned 404.
+- Live screenshots: local ignored `shots/live-1920x1080.png` and `shots/live-1440x900.png`.
