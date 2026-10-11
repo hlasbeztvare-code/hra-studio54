@@ -26,7 +26,7 @@ No new slogans or character dialogue are allowed.
 
 Ticker moves right to left at a constant rate, with two identical adjacent groups and a seamless loop. Hover/focus pauses it. Bubble changes use fade-in and a small scale transition, every nine seconds, and pause while a speech bubble is hovered or the scene contains keyboard focus, a modal is open or the document is hidden. Reduced-motion preference disables automatic movement and phrase rotation; the ticker can be scrolled manually.
 
-Controls have visible keyboard focus. Phones use a vertically scrollable layout: ticker, full uncropped artwork, START, a two-column touch HUD, bubbles, TOP 10, statistics and equally sized original posters. Compact mode also covers tablets and short landscape screens. From 600 px, artwork and controls share two columns. Compact controls have at least 44 px touch targets. Dialogs are fixed to the viewport and independently scrollable, including after scrolling the intro or opening a keyboard. The former blurred Intro pseudo-element with a negative 60 px inset is disabled to prevent horizontal overflow.
+Controls have visible keyboard focus. Phones use a vertically scrollable layout: ticker, speech bubbles above their characters, full uncropped artwork, START, a two-column touch HUD, TOP 10, statistics and equally sized original posters. Compact mode also covers tablets and short landscape screens. From 600 px, artwork and controls share two columns. Compact controls have at least 44 px touch targets. Dialogs are fixed to the viewport and independently scrollable, including after scrolling the intro or opening a keyboard. The former blurred Intro pseudo-element with a negative 60 px inset is disabled to prevent horizontal overflow.
 
 ## Preview and verification
 
@@ -36,6 +36,7 @@ npm run dev
 # In another terminal; Google Chrome must be installed:
 npm run check:intro
 npm run check:responsive
+npm run check:crew
 npm run preview:intro
 npm run build
 ```
@@ -54,3 +55,7 @@ The user approved deployment on October 10, 2026. Further gameplay features rema
 - Build and all eight regression groups passed before deployment. Live Chrome checks passed at 1920×1080 and 1440×900: original names/scores, artwork and posters, leaderboard toggle, START/name modal, uncropped stage and no runtime errors. Live index, statistics and leaderboard GET endpoints returned successfully. Preview visit writes were intercepted.
 - `deploy/.assetsignore` excludes macOS metadata from published assets; the live `/.DS_Store` path returned 404.
 - Live screenshots: local ignored `shots/live-1920x1080.png` and `shots/live-1440x900.png`.
+
+## Follow-up fixes — October 11, 2026
+
+The user authorized mobile fixes, speech bubbles above characters on mobile, full-screen poster viewing and repair of missing bar portraits. The original embedded Péťa/Denisa/Martina artwork is preserved. Data and blob URLs pass through the image resolver unchanged; a file-version suffix previously corrupted their inline base64 payload. The poster viewer is a separate viewport overlay showing each supplied original, with close, backdrop dismissal, Escape, contained keyboard focus and restored trigger focus. The intro supports landscape without the old rotate-phone overlay; gameplay orientation handling remains unchanged.

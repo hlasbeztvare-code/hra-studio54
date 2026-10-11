@@ -8,7 +8,8 @@
     "unpack": "node unpack.mjs",
     "check:intro": "node scripts/check-intro.mjs",
     "check:responsive": "node scripts/check-responsive.mjs",
-    "preview:intro": "node scripts/preview-intro.mjs"
+    "preview:intro": "node scripts/preview-intro.mjs",
+    "check:crew": "node scripts/check-crew.mjs"
   },
   "devDependencies": {
     "playwright": "^1.63.0"

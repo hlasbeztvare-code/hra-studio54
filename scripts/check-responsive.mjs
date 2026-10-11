@@ -17,7 +17,7 @@ async function pageFor(width,height){
  return p;
 }
 async function noOverflow(p,width){
- const overflow=await p.evaluate(()=>['html','body','.game-root','.in5','.s54-scene','.s54-hud','.s54-posters','.s54-top','.in5-nf','.h7-box','.mg-lb'].flatMap(selector=>[...document.querySelectorAll(selector)].filter(e=>e.clientWidth>0&&e.scrollWidth>e.clientWidth+2).map(e=>({selector,client:e.clientWidth,scroll:e.scrollWidth}))));
+ const overflow=await p.evaluate(()=>['html','body','.game-root','.in5','.s54-scene','.s54-hud','.s54-posters','.s54-top','.in5-nf','.h7-box','.mg-lb','.s54-poster-view'].flatMap(selector=>[...document.querySelectorAll(selector)].filter(e=>e.clientWidth>0&&e.scrollWidth>e.clientWidth+2).map(e=>({selector,client:e.clientWidth,scroll:e.scrollWidth}))));
  if(overflow.length)await p.screenshot({path:'shots/responsive-debug.png'});
  assert.deepEqual(overflow,[],'horizontal overflow in a content container');
  for(const selector of ['.s54-start','.s54-hud','.s54-pill','.s54-record','.s54-speech','.s54-poster','.s54-top']){
@@ -36,6 +36,7 @@ try{
   const compact=await p.locator('.s54-visual').evaluate(e=>getComputedStyle(e).display!=='contents');
   if(compact){
    const cta=await p.locator('.s54-start').boundingBox();assert.ok(cta.y>=0&&cta.y+cta.height<=height+1,'START requires scrolling on first view');
+   const art=await p.locator('.s54-artframe').boundingBox();for(const bubble of await p.locator('.s54-speech').all()){const b=await bubble.boundingBox();assert.ok(b.y+b.height<=art.y,'bubble must sit above its character');}
    const visual=await p.locator('.s54-visual').boundingBox();assert.ok(visual.height>=100,'scene remains visible');
    for(const button of await p.locator('.s54-pill').all()){const b=await button.boundingBox();assert.ok(b.width>=44&&b.height>=44,'touch target too small')}
    await p.locator('.in5').evaluate(e=>{e.scrollTop=e.scrollHeight});
@@ -46,6 +47,14 @@ try{
    await p.locator('.in5').evaluate(e=>{e.scrollTop=e.scrollHeight});await p.locator('.s54-top-head button').first().evaluate(e=>e.click());await p.locator('.mg-lb').waitFor();await noOverflow(p,width);assert.ok(await p.locator('.mg-lb').isVisible());await p.getByRole('button',{name:'Zpátky do klubu',exact:true}).click();
    await p.locator('.in5').evaluate(e=>{e.scrollTop=0});
   }
+  for(const side of ['left','right']){
+   const poster=p.locator('.s54-poster-'+side);await poster.click();await p.locator('.s54-poster-view').waitFor();await visibleDialog(p,'.s54-poster-view',width,height);
+   assert.ok(await p.locator('.s54-poster-view img').evaluate(e=>e.complete&&e.naturalWidth>1000));
+   await p.keyboard.press('Tab');assert.equal(await p.locator('.s54-poster-x').evaluate(e=>e===document.activeElement),true);
+   if(side==='left')await p.keyboard.press('Escape');else await p.locator('.s54-poster-x').click();
+   assert.equal(await p.locator('.s54-poster-view').count(),0);
+  }
+  await p.locator('.in5').evaluate(e=>e.scrollTop=0);
   if([320,390,768,844,1280,1400].includes(width))await p.screenshot({path:`shots/check-responsive-${width}x${height}.png`});
   assert.deepEqual(p.errors,[]);await p.close();count++;console.log(`PASS responsive ${width}×${height}: content bounds, reachable controls and dialogs`);
  }
