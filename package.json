@@ -7,6 +7,7 @@
     "build": "node build.mjs",
     "unpack": "node unpack.mjs",
     "check:intro": "node scripts/check-intro.mjs",
+    "check:responsive": "node scripts/check-responsive.mjs",
     "preview:intro": "node scripts/preview-intro.mjs"
   },
   "devDependencies": {

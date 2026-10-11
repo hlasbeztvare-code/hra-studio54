@@ -26,7 +26,7 @@ No new slogans or character dialogue are allowed.
 
 Ticker moves right to left at a constant rate, with two identical adjacent groups and a seamless loop. Hover/focus pauses it. Bubble changes use fade-in and a small scale transition, every nine seconds, and pause while a speech bubble is hovered or the scene contains keyboard focus, a modal is open or the document is hidden. Reduced-motion preference disables automatic movement and phrase rotation; the ticker can be scrolled manually.
 
-Controls have visible keyboard focus. The mobile fallback uses a scrollable stacked composition and retains independent posters and controls.
+Controls have visible keyboard focus. Phones use a vertically scrollable layout: ticker, full uncropped artwork, START, a two-column touch HUD, bubbles, TOP 10, statistics and equally sized original posters. Compact mode also covers tablets and short landscape screens. From 600 px, artwork and controls share two columns. Compact controls have at least 44 px touch targets. Dialogs are fixed to the viewport and independently scrollable, including after scrolling the intro or opening a keyboard. The former blurred Intro pseudo-element with a negative 60 px inset is disabled to prevent horizontal overflow.
 
 ## Preview and verification
 
@@ -35,6 +35,7 @@ npm ci
 npm run dev
 # In another terminal; Google Chrome must be installed:
 npm run check:intro
+npm run check:responsive
 npm run preview:intro
 npm run build
 ```

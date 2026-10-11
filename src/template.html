@@ -1317,8 +1317,11 @@ div:has(> .ev-bub),div:has(> .gls:not(.bubble)),[data-screen-label="Konec"]{back
 @media (max-width:420px){.h7-head b{font-size:25px}.h7-tab{padding:7px 9px;font-size:12px}.h7-sec p,.h7-sec ul,.h7-sec ol{font-size:15px!important}}
 /* Layered intro: the stage and all scene anchors share one uncropped 16:9 coordinate space. */
 .game-root.s54-intro-root{zoom:1;--z:1}
+.game-root.s54-intro-root::after{display:none!important}
 .game-root .in5{background:#120808;isolation:isolate}
+.game-root .in5::before{display:none}
 .s54-scene{--s54-yellow:#ffe600;--s54-ink:#121010;--s54-pink:#f700ce;position:absolute;left:50%;top:50%;width:min(100vw,177.7778vh);aspect-ratio:16/9;transform:translate(-50%,-50%);container-type:inline-size;isolation:isolate;font-family:'Passion CZ',sans-serif}
+.s54-visual,.s54-posters{display:contents}
 .s54-art{position:absolute;inset:0;z-index:-1;background:url('/uploads/intro-artwork.png?v=__BUILD_V__') center/100% 100% no-repeat}
 .s54-logo-link{position:absolute;left:5%;top:5%;width:23%;height:20%;border-radius:10px}
 .s54-ticker{position:absolute;inset:0 0 auto;height:4.5%;z-index:10;overflow:hidden;background:rgba(8,8,9,.97);border:1px solid var(--s54-yellow);border-radius:10px;display:flex;align-items:center;color:var(--s54-yellow);font-size:clamp(14px,1.15cqw,22px);font-weight:700;letter-spacing:.02em;text-transform:uppercase}
@@ -1356,23 +1359,59 @@ div:has(> .ev-bub),div:has(> .gls:not(.bubble)),[data-screen-label="Konec"]{back
 .s54-hud svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .s54-scene :is(button,a,[tabindex]):focus-visible{outline:3px solid #fff;outline-offset:5px}
 .game-root .in5-wrap.s54-dialogs{display:contents!important}.s54-dialogs>.in5-nf-ov{z-index:50}
-@media (max-width:899px),(max-aspect-ratio:5/4){
- .game-root .in5{overflow-y:auto}
- .s54-scene{position:relative;left:0;top:0;transform:none;width:100%;min-height:100svh;aspect-ratio:auto;padding:64px 18px 24px;display:flex;flex-direction:column;align-items:center;gap:18px}
- .s54-art{background-size:auto 68vh;background-position:50% 40px;background-color:#1a0d0d}
- .s54-logo-link{position:relative;align-self:flex-start;left:auto;top:auto;width:44%;height:95px;margin-bottom:200px}
- .s54-ticker{position:absolute;top:0;height:44px;font-size:16px;border-radius:0}
- .s54-top{position:relative;right:auto;top:auto;width:min(100%,460px);padding:12px 16px;order:4}
- .s54-top-head button{font-size:20px}.s54-row{font-size:16px;gap:8px}
- .s54-stats{position:relative;right:auto;top:auto;font-size:14px;order:5}
- .s54-speech{position:relative;left:auto;right:auto;top:auto;width:min(100%,460px);padding:14px 18px;font-size:22px;order:2}
- .s54-woman{font-size:20px}
- .s54-start{position:relative;left:auto;bottom:auto;transform:rotate(-3deg);font-size:90px;margin:8px 0 32px;order:3}
- .s54-start:hover{transform:rotate(-3deg) scale(1.04)}.s54-start:active{transform:rotate(-3deg) scale(.98)}
- .s54-poster{position:relative;left:auto;right:auto;top:auto;width:min(72%,300px);height:auto;aspect-ratio:1/1.414;padding:5px;order:6}
- .s54-hud{position:relative;inset:auto;flex-wrap:wrap;justify-content:center;gap:10px;order:7;width:100%}
- .s54-hud-left,.s54-hud-right{flex-wrap:wrap;justify-content:center;gap:10px}
- .s54-pill,.s54-record{font-size:18px;min-height:44px;padding:10px 16px;gap:8px}
+/* The compact layout is also used on tablets and short landscape screens. */
+@media (max-width:1399px),(max-height:799px),(max-aspect-ratio:5/4){
+ .game-root .in5{overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch}
+ .s54-scene{position:relative;left:0;top:0;transform:none;width:100%;min-height:100svh;min-height:100dvh;aspect-ratio:auto;padding:max(8px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;align-items:start;gap:14px;max-width:100%;margin:0 auto}
+ .s54-scene>*{min-width:0;max-width:100%}
+ .s54-visual{display:block;position:relative;grid-column:1/-1;order:1;aspect-ratio:16/9;isolation:isolate;overflow:hidden;border-radius:10px;box-shadow:0 0 0 1px #ffae5240}
+ .s54-art{background-size:100% 100%;background-position:center;background-color:#1a0d0d}
+ .s54-logo-link{left:5%;top:5%;width:23%;height:20%}
+ .s54-ticker{position:relative;inset:auto;width:100%;height:40px;font-size:14px;border-radius:8px;grid-column:1/-1;order:0}
+ .s54-top{position:relative;inset:auto;width:100%;padding:12px 14px;grid-column:1/-1;order:5;box-sizing:border-box;transform:none}
+ .s54-top-head{margin-bottom:8px;gap:10px}
+ .s54-top-head button{font-size:20px;min-width:0;overflow-wrap:anywhere}
+ .s54-top .s54-top-close{width:44px;height:44px;font-size:26px}
+ .s54-row{font-size:16px;line-height:1.25;gap:8px;padding:2px 0;grid-template-columns:1.5em minmax(0,1fr) minmax(3.5em,auto)}
+ .s54-row span:last-child{overflow-wrap:anywhere;min-width:0;text-align:right}
+ .s54-stats{position:relative;inset:auto;justify-self:end;font-size:13px;line-height:1.3;white-space:normal;overflow-wrap:anywhere;grid-column:1/-1;order:6}
+ .s54-speech{position:relative;inset:auto;width:100%;padding:12px 10px;font-size:clamp(17px,2.7vw,22px);line-height:1.15;border-radius:18px;box-sizing:border-box;overflow-wrap:anywhere;order:4;box-shadow:2px 3px 0 #121010}
+ .s54-speech::before,.s54-speech::after{display:none}
+ .s54-pepa{grid-column:1}.s54-woman{grid-column:2;font-size:clamp(16px,2.5vw,21px)}
+ .s54-start{position:relative;inset:auto;justify-self:center;grid-column:1/-1;order:2;transform:rotate(-3deg);font-size:clamp(66px,15vw,100px);margin:0 0 8px;max-width:90%;line-height:.95;-webkit-text-stroke:4px #121010;text-shadow:3px 4px 0 #121010}
+ .s54-start:hover{transform:rotate(-3deg) scale(1.03)}.s54-start:active{transform:rotate(-3deg) scale(.98)}
+ .s54-posters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;grid-column:1/-1;order:7;width:100%;min-width:0;align-items:start}
+ .s54-poster{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:1/1.414;padding:4px;border-width:2px;min-width:0;max-width:100%;box-sizing:border-box;box-shadow:0 0 0 1px #ffc56b,2px 3px 0 #160905}
+ .s54-poster img{height:100%;width:100%;object-fit:contain;min-width:0}
+ .s54-hud{position:relative;inset:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-column:1/-1;order:3;width:100%;min-width:0}
+ .s54-hud-left,.s54-hud-right{display:contents}
+ .s54-pill,.s54-record{width:100%;min-width:0;max-width:100%;font-size:clamp(16px,2.4vw,20px);line-height:1.15;min-height:48px;height:100%;padding:10px 8px;gap:7px;white-space:normal;overflow-wrap:anywhere;text-align:center;box-sizing:border-box;border-radius:12px}
+ .s54-hud svg{width:18px;height:18px}
+ .s54-dialogs>.in5-nf-ov,.in5>.h7-ov{position:fixed;inset:0;width:100%;max-height:100dvh;overflow-y:auto;overscroll-behavior:contain;padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+ .in5 .in5-nf{min-width:0;max-width:100%;max-height:calc(100dvh - 40px);overflow-y:auto;transform:none;padding:46px 16px 18px;box-shadow:4px 5px 0 #E2B04E}
+ .in5 .in5-nf-x{width:36px;height:36px;top:6px;right:8px}
+ .in5 .in5-nf-k,.in5 .in5-nf-err{max-width:100%;overflow-wrap:anywhere}
+ .in5 .h7-box{width:100%;min-width:0;max-width:640px;box-shadow:3px 4px 0 #A97A2B;overflow-wrap:anywhere}
+ .in5 .h7-head,.in5 .h7-tabs{min-width:0;max-width:100%}
+ .in5 .h7-tab{max-width:100%;overflow-wrap:anywhere}
+}
+@media (max-width:359px){
+ .s54-scene{gap:12px;padding-left:10px;padding-right:10px}
+ .s54-speech{grid-column:1/-1;font-size:18px}
+ .s54-woman{font-size:17px}
+ .s54-posters{gap:12px}
+ .s54-pill,.s54-record{font-size:16px;padding:8px 6px;gap:5px}
+}
+@media (min-width:600px) and (max-width:1399px),(min-width:600px) and (max-height:799px),(min-width:600px) and (max-aspect-ratio:5/4){
+ .s54-scene{max-width:960px;gap:16px;padding:12px 20px 28px}
+ .s54-visual{grid-column:1;grid-row:2/span 2;align-self:stretch;aspect-ratio:auto;min-height:190px}
+ .s54-art{background-size:contain;background-repeat:no-repeat}
+ .s54-ticker{grid-row:1}
+ .s54-start{grid-column:2;grid-row:2;align-self:center;font-size:clamp(68px,10vw,98px);margin:0 0 6px}
+ .s54-hud{grid-column:2;grid-row:3;align-self:end}
+ .s54-pepa{grid-column:1;grid-row:4}.s54-woman{grid-column:2;grid-row:4}
+ .s54-top{grid-row:5}.s54-stats{grid-row:6}.s54-posters{grid-row:7;max-width:600px;justify-self:center}
+ .s54-row{font-size:17px}
 }
 @media (prefers-reduced-motion:reduce){.s54-ticker-track,.s54-speech{animation:none}.s54-ticker{overflow-x:auto}.s54-ticker-copy[aria-hidden]{display:none}.s54-start,.s54-pill{transition:none}}
 
@@ -1533,14 +1572,15 @@ div:has(> .ev-bub),div:has(> .gls:not(.bubble)),[data-screen-label="Konec"]{back
   <sc-if value="{{ isIntro }}" hint-placeholder-val="{{ true }}">
     <div data-screen-label="Intro" class="in5">
       <div class="s54-scene">
-        <div class="s54-art" aria-hidden="true"></div>
+        <div class="s54-visual"><div class="s54-art" aria-hidden="true"></div>
+          <a class="s54-logo-link" href="https://www.studio54.cz" target="_blank" rel="noopener" aria-label="Studio 54"></a>
+        </div>
         <div class="s54-ticker" tabindex="0" aria-label="Pepa u dveří">
           <div class="s54-ticker-track">
             <div class="s54-ticker-copy"><b>1 · Pepa u dveří</b><sc-for list="{{ introRules }}" as="rule"><span>{{ rule.t }}</span></sc-for></div>
             <div class="s54-ticker-copy" aria-hidden="true"><b>1 · Pepa u dveří</b><sc-for list="{{ introRules }}" as="rule"><span>{{ rule.t }}</span></sc-for></div>
           </div>
         </div>
-        <a class="s54-logo-link" href="https://www.studio54.cz" target="_blank" rel="noopener" aria-label="Studio 54"></a>
         <aside class="{{ introTopCls }}" id="intro-top10">
           <div class="s54-top-head"><button sc-camel-on-click="{{ openLb }}">Pořadí · TOP 10</button><button class="s54-top-close" sc-camel-on-click="{{ toggleIntroTop }}" aria-label="Zavřít">×</button></div>
           <div class="s54-top-rows"><sc-for list="{{ lbTop10 }}" as="r" hint-placeholder-count="10"><div class="s54-row"><span>{{ r.p }}</span><span>{{ r.n }}</span><span>{{ r.s }}</span></div></sc-for></div>
@@ -1548,8 +1588,8 @@ div:has(> .ev-bub),div:has(> .gls:not(.bubble)),[data-screen-label="Konec"]{back
         <sc-if value="{{ statsOn }}" hint-placeholder-val="{{ false }}"><span class="s54-stats">{{ statsTxt }}</span></sc-if>
         <div key="{{ introPepaKey }}" class="s54-speech s54-pepa"><span>{{ introPepa }}</span></div>
         <div key="{{ introWomanKey }}" class="s54-speech s54-woman"><span>{{ introInformation }}</span></div>
-        <div class="s54-poster s54-poster-left"><img src="/uploads/intro-landchi.jpeg?v=__BUILD_V__" alt="Program noci"></div>
-        <div class="s54-poster s54-poster-right"><img src="/uploads/intro-mazer.jpeg?v=__BUILD_V__" alt="Program další noci"></div>
+        <div class="s54-posters"><div class="s54-poster s54-poster-left"><img src="/uploads/intro-landchi.jpeg?v=__BUILD_V__" alt="Program noci"></div>
+        <div class="s54-poster s54-poster-right"><img src="/uploads/intro-mazer.jpeg?v=__BUILD_V__" alt="Program další noci"></div></div>
         <button class="s54-start" sc-camel-on-click="{{ bigStart }}" aria-label="Start"><span>START!</span></button>
         <nav class="s54-hud">
           <div class="s54-hud-left"><button class="s54-pill" sc-camel-on-click="{{ toggleIntroTop }}" aria-expanded="{{ introTopOpen }}" aria-controls="intro-top10"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v6a5 5 0 0 1-10 0zM7 5H3v3a4 4 0 0 0 4 4m10-7h4v3a4 4 0 0 1-4 4M12 14v6m-5 1h10"/></svg>Pořadí</button>
