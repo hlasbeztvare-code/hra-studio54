@@ -210,5 +210,13 @@
   "b7a3c1f4-5e9d-4a28-9c17-8d2f6b3e5c91": {
     "file": "b7a3c1f4-5e9d-4a28-9c17-8d2f6b3e5c91.svg",
     "mime": "image/svg+xml"
+  },
+  "c54a0001-4e54-4a54-8a54-fa5ade154001": {
+    "file": "c54a0001-4e54-4a54-8a54-fa5ade154001.jpg",
+    "mime": "image/jpeg"
+  },
+  "c54a0002-4e54-4a54-8a54-fa5ade154002": {
+    "file": "c54a0002-4e54-4a54-8a54-fa5ade154002.webp",
+    "mime": "image/webp"
   }
 }

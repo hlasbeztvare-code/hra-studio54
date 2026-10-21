@@ -170,5 +170,13 @@
   {
     "id": "kevinUnisex",
     "uuid": "b7a3c1f4-5e9d-4a28-9c17-8d2f6b3e5c91"
+  },
+  {
+    "id": "introPhoto",
+    "uuid": "c54a0001-4e54-4a54-8a54-fa5ade154001"
+  },
+  {
+    "id": "hummerRef",
+    "uuid": "c54a0002-4e54-4a54-8a54-fa5ade154002"
   }
 ]
